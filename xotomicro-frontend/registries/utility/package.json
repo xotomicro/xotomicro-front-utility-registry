@@ -1,17 +1,15 @@
 {
     "name": "@xotomicro/utility",
     "private": true,
-    "version": "0.0.0",
+    "version": "0.0.1",
     "repository": "https://github.com/xotomicro/xotomicro",
-	"publishConfig": {
-        "registry" : "https://npm.pkg.github.com/@xotomicro-utility",
-    	"access": "public"
-  	},
+    "publishConfig": {
+        "registry": "https://npm.pkg.github.com/@xotomicro-utility",
+        "access": "public"
+    },
     "scripts": {
         "start": "echo OK",
-		"publish": "lerna run tsc && lerna publish",
+        "publish": "lerna run tsc && lerna publish",
         "sync:link": "yarn unlink || true && yarn link"
-    },
-    "dependencies": {},
-    "devDependencies": {}
+    }
 }

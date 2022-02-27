@@ -1,7 +1,7 @@
 {
     "name": "@xotomicro/design",
     "private": true,
-    "version": "0.0.1",
+    "version": "0.0.2",
     "types": "dist/__types__",
     "main": "dist/index.js",
     "repository": "https://github.com/xotomicro/xotomicro",

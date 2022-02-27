@@ -1,7 +1,7 @@
 {
     "name": "@xotomicro/utility",
     "private": true,
-    "version": "0.0.2",
+    "version": "0.0.3",
     "repository": "https://github.com/xotomicro/xotomicro",
     "publishConfig": {
         "registry": "https://npm.pkg.github.com/@xotomicro-utility",

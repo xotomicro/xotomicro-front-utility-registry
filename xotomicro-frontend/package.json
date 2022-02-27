@@ -23,7 +23,7 @@
         "clean": "lerna clean --yes && lerna exec -- rm -rf build",
         "build": "lerna run build --stream",
         "initialize": "yarn install --legacy-peer-deps",
-        "sync:link": "yarn workspace design run sync:link && yarn workspace environment run sync:link && lerna run sync:link --stream --scope={authweb,eventweb,orderweb,productweb,userweb,shellsystem,hooksystem}",
+        "sync:link": "yarn workspace @xotomicro/design run sync:link && yarn workspace @xotomicro/utility run sync:link && lerna run sync:link --stream --scope={authweb,eventweb,orderweb,productweb,userweb,shellsystem,hooksystem}",
         "start": "lerna exec yarn start --parallel",
         "start:app": "lerna run start --stream --scope={authweb,eventweb,orderweb,productweb,userweb}",
         "start:root": "lerna run start --stream --scope={shellsystem,hooksystem}",

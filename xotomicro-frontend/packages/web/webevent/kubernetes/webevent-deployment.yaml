@@ -1,0 +1,26 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  labels:
+    io.kompose.service: webevent
+  name: webevent
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      io.kompose.service: webevent
+  strategy: {}
+  template:
+    metadata:
+      labels:
+        io.kompose.service: webevent
+    spec:
+      containers:
+        - image: webevent
+          imagePullPolicy: IfNotPresent
+          name: webevent
+          ports:
+            - containerPort: 80
+          resources: {}
+      restartPolicy: Always
+status: {}

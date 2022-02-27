@@ -1,0 +1,4 @@
+# https://adarshaacharya.com.np/blog/setup-husky-precommit-hooks
+
+#!/bin/sh
+. "$(dirname "$0")/_/husky.sh"

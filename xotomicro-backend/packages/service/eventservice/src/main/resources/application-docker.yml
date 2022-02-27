@@ -1,0 +1,21 @@
+server:
+  port: 8085
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://eureka:9090/eureka
+  instance:
+    preferIpAddress: true
+
+kafka:
+  bootstrapServer: kafka:9092
+  consumerGroup: eventservice
+  topics: product
+
+spring:
+  application:
+    name: eventservice
+
+elasticsearch:
+  host: elasticsearch:9200

@@ -1,0 +1,9 @@
+version: "3"
+
+services:
+    designsystem:
+        build: ./
+        container_name: designsystem
+        image: designsystem
+        ports:
+            - 7076:80

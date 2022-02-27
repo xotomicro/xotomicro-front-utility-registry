@@ -1,0 +1,17 @@
+{
+    "compileOnSave": true,
+    "compilerOptions": {
+        "baseUrl": ".",
+        "allowSyntheticDefaultImports": true,
+        "esModuleInterop": true,
+        "moduleResolution": "classic",
+        "sourceMap": true,
+        "strict": true,
+        "jsx": "react",
+        "declaration": true,
+        "declarationDir": "dist/__types__",
+        "sourceRoot": "src",
+        "outDir": "dist"
+    },
+    "include": ["src/**/*"]
+}

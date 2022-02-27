@@ -1,0 +1,24 @@
+{
+  "packages": [
+    "packages/web/*",
+    "packages/design/*",
+    "packages/utility/*",
+    "packages/root/*"
+  ],
+  "useWorkspaces": true,
+  "nohoist": ["**"],
+  "ignoreChanges": ["**/__tests__/**", "**/*.md"],
+  "version": "1.1.0",
+  "npmClient": "yarn",
+  "command": {
+    "publish": {
+      "ignoreChanges": ["ignored-file", "*.md"],
+      "message": "chore(release): publish",
+      "registry": "https://npm.pkg.github.com"
+    },
+    "bootstrap": {
+      "ignore": "component-*",
+      "npmClientArgs": ["--no-package-lock"]
+    }
+  }
+}

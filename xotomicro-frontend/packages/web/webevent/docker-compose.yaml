@@ -1,0 +1,11 @@
+version: "3"
+
+services:
+    
+  webevent:
+    build: ./
+    container_name: webevent
+    image: webevent
+    ports:
+      - 7071:80
+    

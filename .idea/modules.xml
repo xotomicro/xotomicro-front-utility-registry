@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/xotomicro-backend/packages/authservice/authservice.iml" filepath="$PROJECT_DIR$/xotomicro-backend/packages/authservice/authservice.iml" />
+      <module fileurl="file://$PROJECT_DIR$/xotomicro-backend/packages/eurekaserver/eurekaserver.iml" filepath="$PROJECT_DIR$/xotomicro-backend/packages/eurekaserver/eurekaserver.iml" />
+      <module fileurl="file://$PROJECT_DIR$/xotomicro-backend/packages/eventservice/eventservice.iml" filepath="$PROJECT_DIR$/xotomicro-backend/packages/eventservice/eventservice.iml" />
+      <module fileurl="file://$PROJECT_DIR$/xotomicro-backend/packages/gatewayservice/gatewayservice.iml" filepath="$PROJECT_DIR$/xotomicro-backend/packages/gatewayservice/gatewayservice.iml" />
+      <module fileurl="file://$PROJECT_DIR$/xotomicro-backend/packages/orderservice/orderservice.iml" filepath="$PROJECT_DIR$/xotomicro-backend/packages/orderservice/orderservice.iml" />
+      <module fileurl="file://$PROJECT_DIR$/xotomicro-backend/parent.iml" filepath="$PROJECT_DIR$/xotomicro-backend/parent.iml" />
+      <module fileurl="file://$PROJECT_DIR$/xotomicro-backend/packages/productservice/productservice.iml" filepath="$PROJECT_DIR$/xotomicro-backend/packages/productservice/productservice.iml" />
+      <module fileurl="file://$PROJECT_DIR$/xotomicro-backend/packages/userservice/userservice.iml" filepath="$PROJECT_DIR$/xotomicro-backend/packages/userservice/userservice.iml" />
+    </modules>
+  </component>
+</project>

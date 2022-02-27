@@ -1,0 +1,9 @@
+version: "3"
+
+services:
+  rootshell:
+    build: ./
+    container_name: rootshell
+    image: rootshell
+    ports:
+      - 7070:80

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="eurekaserver" />
+        <module name="authservice" />
+        <module name="userservice" />
+        <module name="productservice" />
+        <module name="eventservice" />
+        <module name="gatewayservice" />
+        <module name="orderservice" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="authservice" target="11" />
+      <module name="eurekaserver" target="11" />
+      <module name="eventservice" target="11" />
+      <module name="gatewayservice" target="11" />
+      <module name="orderservice" target="11" />
+      <module name="parent" target="1.5" />
+      <module name="productservice" target="11" />
+      <module name="userservice" target="11" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="authservice" options="-parameters" />
+      <module name="eurekaserver" options="-parameters" />
+      <module name="eventservice" options="-parameters" />
+      <module name="gatewayservice" options="-parameters" />
+      <module name="orderservice" options="-parameters" />
+      <module name="productservice" options="-parameters" />
+      <module name="userservice" options="-parameters" />
+    </option>
+  </component>
+</project>

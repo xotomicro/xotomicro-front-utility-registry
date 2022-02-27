@@ -1,0 +1,7 @@
+# [submodule "xotomicro-frontend"]
+# 	path = /xotomicro-frontend
+# 	url = git@github.com:gregcousin126/xotomicro-frontend.git
+
+# [submodule "xotomicro-backend"]
+# 	path = /xotomicro-backend
+# 	url = git@github.com:gregcousin126/xotomicro-backend.git

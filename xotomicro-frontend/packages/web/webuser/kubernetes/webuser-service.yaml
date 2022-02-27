@@ -1,0 +1,15 @@
+apiVersion: v1
+kind: Service
+metadata:
+  labels:
+    io.kompose.service: webuser
+  name: webuser
+spec:
+  ports:
+    - name: "7074"
+      port: 7074
+      targetPort: 80
+  selector:
+    io.kompose.service: webuser
+status:
+  loadBalancer: {}

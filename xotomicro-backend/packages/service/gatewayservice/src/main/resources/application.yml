@@ -1,0 +1,47 @@
+server:
+  port: 8080
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:9090/eureka
+  instance:
+    preferIpAddress: true
+
+cors:
+  allowed-url: ${ALLOWED_URL:*}
+
+spring:
+  application:
+    name: gatewayservice
+  cloud:
+    gateway:
+      discovery:
+        locator:
+          enabled: true
+          lower-case-service-id: true
+      routes:
+        - id: authservice
+          uri: lb://authservice
+          predicates:
+            - Path=/auth/**
+
+        - id: userservice
+          uri: lb://userservice
+          predicates:
+            - Path=/users/**
+
+        - id: productservice
+          uri: lb://productservice
+          predicates:
+            - Path=/products/**
+
+        - id: orderservice
+          uri: lb://orderservice
+          predicates:
+            - Path=/orders/**
+
+        - id: eventservice
+          uri: lb://eventservice
+          predicates:
+            - Path=/events/**

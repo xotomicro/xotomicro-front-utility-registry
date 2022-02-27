@@ -1,0 +1,11 @@
+version: "3"
+
+services:
+
+  webuser:
+    build: ./
+    container_name: webuser
+    image: webuser
+    ports:
+      - 7074:80
+    

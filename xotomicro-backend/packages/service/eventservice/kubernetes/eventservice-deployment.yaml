@@ -1,0 +1,26 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  labels:
+    io.kompose.service: eventservice
+  name: eventservice
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      io.kompose.service: eventservice
+  strategy: {}
+  template:
+    metadata:
+      labels:
+        io.kompose.service: eventservice
+    spec:
+      containers:
+        - image: eventservice
+          name: eventservice
+          imagePullPolicy: IfNotPresent
+          ports:
+            - containerPort: 8085
+          resources: {}
+      restartPolicy: Always
+status: {}

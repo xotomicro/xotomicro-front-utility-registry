@@ -1,0 +1,26 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  labels:
+    io.kompose.service: webproduct
+  name: webproduct
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      io.kompose.service: webproduct
+  strategy: {}
+  template:
+    metadata:
+      labels:
+        io.kompose.service: webproduct
+    spec:
+      containers:
+        - image: webproduct
+          imagePullPolicy: IfNotPresent
+          name: webproduct
+          ports:
+            - containerPort: 80
+          resources: {}
+      restartPolicy: Always
+status: {}

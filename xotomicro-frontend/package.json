@@ -11,8 +11,7 @@
         "packages": [
             "packages/web/*",
             "packages/system/*",
-            "registries/design/*",
-            "registries/utility/*"
+            "registries/*"
         ]
     },
     "resolutions": {

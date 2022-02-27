@@ -13,6 +13,7 @@
         "sync:link": "yarn link design @xotomicro/design && yarn link @xotomicro/utility"
     },
     "dependencies": {
+        "@xotomicro/design": "^0.0.5",
         "@xotomicro/utility": "^0.0.5",
         "css-loader": "^6.2.0",
         "node-sass": "^6.0.1",

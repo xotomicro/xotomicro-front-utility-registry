@@ -1,6 +1,6 @@
 {
     "name": "@xotomicro/utility",
-    "private": true,
+    "private": false,
     "version": "0.0.4",
     "repository": "https://github.com/xotomicro/xotomicro",
     "publishConfig": {

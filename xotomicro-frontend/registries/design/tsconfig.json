@@ -1,5 +1,4 @@
 {
-	"extends": "./node_modules/@xotomicro-utility/src/tsconfig.base.json",
     "compileOnSave": true,
     "compilerOptions": {
         "baseUrl": ".",

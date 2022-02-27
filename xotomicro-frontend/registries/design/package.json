@@ -1,6 +1,6 @@
 {
     "name": "@xotomicro/design",
-    "private": true,
+    "private": false,
     "version": "0.0.2",
     "types": "dist/__types__",
     "main": "dist/index.js",

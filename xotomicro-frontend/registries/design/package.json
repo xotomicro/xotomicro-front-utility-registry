@@ -20,6 +20,7 @@
         "sync:link": "yarn unlink || true && yarn link"
     },
     "dependencies": {
+        "@xotomicro/utility": "^0.0.5",
         "css-loader": "^6.2.0",
         "node-sass": "^6.0.1",
         "react": "^17.0.1",

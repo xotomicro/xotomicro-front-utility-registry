@@ -1,0 +1,12 @@
+{
+    "extends": "./node_modules/@xotomicro-utility/src/tsconfig.base.json",
+    "compilerOptions": {
+        "baseUrl": ".",
+        "allowSyntheticDefaultImports": true,
+        "esModuleInterop": true,
+        "sourceMap": true,
+        "strict": true,
+        "jsx": "react"
+    },
+    "include": ["src/**/*", "../authweb/src/model", "../authweb/src/api"]
+}

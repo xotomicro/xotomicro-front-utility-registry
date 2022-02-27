@@ -1,0 +1,22 @@
+{
+    "extends": "./node_modules/@xotomicro-utility/src/tsconfig.base.json",
+    "compilerOptions": {
+        "target": "esnext",
+        "module": "esnext",
+
+        "strict": false,
+        "jsx": "preserve",
+        "importHelpers": true,
+        "experimentalDecorators": true,
+        "skipLibCheck": true,
+        "esModuleInterop": true,
+        "allowSyntheticDefaultImports": true,
+        "sourceMap": true,
+        "baseUrl": ".",
+        "noEmitOnError": false,
+        "types": [],
+        "lib": ["esnext", "dom", "dom.iterable", "scripthost"]
+    },
+    "include": ["src/**/*.ts", "src/**/*.tsx", "src/**/*.vue", "tests/**/*.ts", "tests/**/*.tsx"],
+    "exclude": ["node_modules"]
+}

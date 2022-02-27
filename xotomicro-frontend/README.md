@@ -1,11 +1,11 @@
 <div align="center">
-	<h1> Monorepo and Micro-Frontends 👋 </h1>
+	<h1> Monorepo and Micro-Frontends 👋  </h1>
 	<img  src="./fontend/documentation/example-monorepo.jpg" width="50%">
 </div>
 <br>
 
 ### 🎭 INFORMATION
-- micro-front ends can work as standalone and only be dependent of designsystem and rootshell services
+- micro-front ends can work as standalone and only be dependent of hooksystem and shellsystem services
 - micro-front ends can be composed with the help of docker and lerna via the commands below
 
 - root packages : packages needed to run the any other webapps from packages/web
@@ -48,18 +48,18 @@ yarn test:coverage # test for code coverage
 
 ### 🌸 WEB APP
 1. WEB APPS
-- [WEB-APP WEBAUTH](./packages/web/webauth/README.md) documentation - webauth service
-- [WEB-APP WEBEVENT](./packages/web/webevent/README.md) documentation - webevent service
-- [WEB-APP WEBORDER](./packages/web/weborder/README.md) documentation - weborder service
-- [WEB-APP WEBPRODUCT](./packages/web/webproduct/README.md) documentation - webproduct service
-- [WEB-APP WEBUSER](./packages/web/webuser/README.md) documentation - webuser service
+- [WEB-APP WEBAUTH](./packages/web/authweb/README.md) documentation - authweb service
+- [WEB-APP WEBEVENT](./packages/web/eventweb/README.md) documentation - eventweb service
+- [WEB-APP WEBORDER](./packages/web/orderweb/README.md) documentation - orderweb service
+- [WEB-APP WEBPRODUCT](./packages/web/productweb/README.md) documentation - productweb service
+- [WEB-APP WEBUSER](./packages/web/userweb/README.md) documentation - userweb service
 2. CONTAINER APPS
-- [CONTAINER-APP designsystem](./packages/design/designsystem/README.md) documentation - designsystem service
-- [CONTAINER-APP rootshell](./packages/root/rootshell/README.md) documentation - rootshell service
+- [CONTAINER-APP hooksystem](./packages/system/hooksystem/README.md) documentation - hooksystem service
+- [CONTAINER-APP shellsystem](./packages/system/shellsystem/README.md) documentation - shellsystem service
 
 ### 🛳 PORTS
-| ROOTSHELL | WEBEVENT | WEBORDER | WEBPRODUCT | WEBUSER | WEBAUTH | designsystem |
-| --------- | -------- | -------- | ---------- | ------- | ------- | ------------ |
-| 7070      | 7071     | 7072     | 7073       | 7074    | 7075    | 7076         |
+| ROOTSHELL | WEBEVENT | WEBORDER | WEBPRODUCT | WEBUSER | WEBAUTH | hooksystem |
+| --------- | -------- | -------- | ---------- | ------- | ------- | ---------- |
+| 7070      | 7071     | 7072     | 7073       | 7074    | 7075    | 7076       |
 
 

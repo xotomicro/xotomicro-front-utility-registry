@@ -1,9 +1,0 @@
-version: "3"
-
-services:
-    webproduct:
-        build: ./
-        container_name: webproduct
-        image: webproduct
-        ports:
-            - 7073:80

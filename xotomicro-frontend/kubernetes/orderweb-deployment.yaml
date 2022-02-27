@@ -1,0 +1,26 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  labels:
+    io.kompose.service: orderweb
+  name: orderweb
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      io.kompose.service: orderweb
+  strategy: {}
+  template:
+    metadata:
+      labels:
+        io.kompose.service: orderweb
+    spec:
+      containers:
+        - image: orderweb
+          imagePullPolicy: IfNotPresent
+          name: orderweb
+          ports:
+            - containerPort: 80
+          resources: {}
+      restartPolicy: Always
+status: {}

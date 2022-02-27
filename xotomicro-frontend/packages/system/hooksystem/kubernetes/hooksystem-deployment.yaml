@@ -1,0 +1,26 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  labels:
+    io.kompose.service: hooksystem
+  name: hooksystem
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      io.kompose.service: hooksystem
+  strategy: {}
+  template:
+    metadata:
+      labels:
+        io.kompose.service: hooksystem
+    spec:
+      containers:
+        - image: hooksystem
+          imagePullPolicy: IfNotPresent
+          name: hooksystem
+          ports:
+            - containerPort: 80
+          resources: {}
+      restartPolicy: Always
+status: {}

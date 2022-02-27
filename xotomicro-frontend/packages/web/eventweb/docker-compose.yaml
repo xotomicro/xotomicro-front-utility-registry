@@ -1,0 +1,11 @@
+version: "3"
+
+services:
+    
+  eventweb:
+    build: ./
+    container_name: eventweb
+    image: eventweb
+    ports:
+      - 7071:80
+    

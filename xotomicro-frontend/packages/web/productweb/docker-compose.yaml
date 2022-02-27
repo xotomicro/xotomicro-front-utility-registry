@@ -1,0 +1,9 @@
+version: "3"
+
+services:
+    productweb:
+        build: ./
+        container_name: productweb
+        image: productweb
+        ports:
+            - 7073:80

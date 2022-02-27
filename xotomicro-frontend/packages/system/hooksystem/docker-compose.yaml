@@ -1,0 +1,9 @@
+version: "3"
+
+services:
+    hooksystem:
+        build: ./
+        container_name: hooksystem
+        image: hooksystem
+        ports:
+            - 7076:80

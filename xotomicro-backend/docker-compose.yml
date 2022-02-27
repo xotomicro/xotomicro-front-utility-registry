@@ -114,10 +114,10 @@ services:
   ##    BACKEND    ##
   ###################
 
-  rootshell:
+  shellsystem:
     extends:
-      file: ./packages/root/rootshell/docker-compose.yml
-      service: rootshell
+      file: ./packages/system/shellsystem/docker-compose.yml
+      service: shellsystem
     depends_on:
       eureka:
         condition: service_healthy

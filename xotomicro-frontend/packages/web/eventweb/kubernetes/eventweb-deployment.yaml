@@ -1,0 +1,26 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  labels:
+    io.kompose.service: eventweb
+  name: eventweb
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      io.kompose.service: eventweb
+  strategy: {}
+  template:
+    metadata:
+      labels:
+        io.kompose.service: eventweb
+    spec:
+      containers:
+        - image: eventweb
+          imagePullPolicy: IfNotPresent
+          name: eventweb
+          ports:
+            - containerPort: 80
+          resources: {}
+      restartPolicy: Always
+status: {}

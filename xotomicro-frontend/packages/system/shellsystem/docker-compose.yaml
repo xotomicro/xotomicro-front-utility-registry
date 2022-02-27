@@ -1,0 +1,9 @@
+version: "3"
+
+services:
+  shellsystem:
+    build: ./
+    container_name: shellsystem
+    image: shellsystem
+    ports:
+      - 7070:80

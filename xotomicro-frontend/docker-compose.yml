@@ -1,36 +1,36 @@
 version: "3"
 
 services:
-    rootshell:
+    shellsystem:
         extends:
-            file: ./packages/root/rootshell/docker-compose.yaml
-            service: rootshell
+            file: ./packages/system/shellsystem/docker-compose.yaml
+            service: shellsystem
 
-    designsystem:
+    hooksystem:
         extends:
-            file: ./packages/design/designsystem/docker-compose.yaml
-            service: designsystem
+            file: ./packages/system/hooksystem/docker-compose.yaml
+            service: hooksystem
 
-    webauth:
+    authweb:
         extends:
-            file: ./packages/web/webauth/docker-compose.yaml
-            service: webauth
+            file: ./packages/web/authweb/docker-compose.yaml
+            service: authweb
 
-    webevent:
+    eventweb:
         extends:
-            file: ./packages/web/webevent/docker-compose.yaml
-            service: webevent
+            file: ./packages/web/eventweb/docker-compose.yaml
+            service: eventweb
 
-    weborder:
+    orderweb:
         extends:
-            file: ./packages/web/weborder/docker-compose.yaml
-            service: weborder
-    webproduct:
+            file: ./packages/web/orderweb/docker-compose.yaml
+            service: orderweb
+    productweb:
         extends:
-            file: ./packages/web/webproduct/docker-compose.yaml
-            service: webproduct
+            file: ./packages/web/productweb/docker-compose.yaml
+            service: productweb
 
-    webuser:
+    userweb:
         extends:
-            file: ./packages/web/webuser/docker-compose.yaml
-            service: webuser
+            file: ./packages/web/userweb/docker-compose.yaml
+            service: userweb

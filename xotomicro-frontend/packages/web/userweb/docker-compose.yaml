@@ -1,0 +1,11 @@
+version: "3"
+
+services:
+
+  userweb:
+    build: ./
+    container_name: userweb
+    image: userweb
+    ports:
+      - 7074:80
+    

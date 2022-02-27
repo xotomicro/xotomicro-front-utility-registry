@@ -1,0 +1,10 @@
+version: "3"
+
+services:
+    
+  orderweb:
+    build: ./
+    container_name: orderweb
+    image: orderweb
+    ports:
+      - 7072:80

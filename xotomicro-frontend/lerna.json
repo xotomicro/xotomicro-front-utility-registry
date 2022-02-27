@@ -1,9 +1,8 @@
 {
   "packages": [
     "packages/web/*",
-    "packages/design/*",
-    "packages/utility/*",
-    "packages/root/*"
+    "packages/system/*",
+    "registries/*"
   ],
   "useWorkspaces": true,
   "nohoist": ["**"],

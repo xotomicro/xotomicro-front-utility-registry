@@ -1,9 +1,0 @@
-version: "3"
-services:
-  
-  webauth:
-    build: ./
-    container_name: webauth
-    image: webauth
-    ports:
-      - 7075:80

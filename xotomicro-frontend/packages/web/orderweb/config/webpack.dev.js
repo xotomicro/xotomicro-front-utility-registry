@@ -4,7 +4,7 @@ const ModuleFederationPlugin = require("webpack/lib/container/ModuleFederationPl
 const commonConfig = require("./webpack.common")
 const deps = require("../package.json").dependencies
 const path = require("path")
-require("dotenv").config({path: "node_modules/@xotomicro-utility/src/.env"})
+require("dotenv").config({path: "node_modules/@xotomicro/utility/lib/.env"})
 require("dotenv").config()
 
 // eslint-disable-next-line no-undef

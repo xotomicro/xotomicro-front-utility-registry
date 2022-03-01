@@ -1,6 +1,6 @@
 module.exports = {
      extends: [
-        "./node_modules/@xotomicro-utility/src/.eslintrc.js"
+        "./node_modules/@xotomicro/utility/lib/.eslintrc.js"
     ],
     rules: {
 		// overrides

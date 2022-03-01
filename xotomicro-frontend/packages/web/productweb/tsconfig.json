@@ -1,5 +1,5 @@
 {
-    "extends": "./node_modules/@xotomicro-utility/src/tsconfig.base.json",
+    "extends": "./node_modules/@xotomicro/utility/lib/tsconfig.base.json",
     "compilerOptions": {
         "lib": ["esnext", "dom"],
         "allowSyntheticDefaultImports": true,

@@ -3,6 +3,7 @@
     "private": false,
     "version": "0.0.5",
     "repository": "https://github.com/xotomicro/xotomicro",
+    "files": ["lib"],
     "publishConfig": {
         "registry": "https://npm.pkg.github.com/@xotomicro-utility",
         "access": "public"

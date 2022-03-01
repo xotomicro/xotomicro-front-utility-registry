@@ -5,6 +5,7 @@
     "types": "dist/__types__",
     "main": "dist/index.js",
     "repository": "https://github.com/xotomicro/xotomicro",
+    "files": ["dist"],
     "publishConfig": {
         "registry": "https://npm.pkg.github.com/@xotomicro-design",
         "access": "public"

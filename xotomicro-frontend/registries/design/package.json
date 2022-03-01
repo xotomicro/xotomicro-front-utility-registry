@@ -6,7 +6,7 @@
     "main": "dist/index.js",
     "repository": "https://github.com/xotomicro/xotomicro",
     "files": [
-        "dist"
+        "dist/**/*"
     ],
     "publishConfig": {
         "registry": "https://npm.pkg.github.com/@xotomicro-design",

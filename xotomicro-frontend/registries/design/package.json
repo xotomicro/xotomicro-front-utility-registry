@@ -1,11 +1,13 @@
 {
     "name": "@xotomicro/design",
     "private": false,
-    "version": "0.0.5",
+    "version": "0.0.6",
     "types": "dist/__types__",
     "main": "dist/index.js",
     "repository": "https://github.com/xotomicro/xotomicro",
-    "files": ["dist"],
+    "files": [
+        "dist"
+    ],
     "publishConfig": {
         "registry": "https://npm.pkg.github.com/@xotomicro-design",
         "access": "public"
@@ -20,7 +22,7 @@
         "test:coverage": "jest src --passWithNoTests --maxWorkers=50% --coverage"
     },
     "dependencies": {
-        "@xotomicro/utility": "^0.0.5",
+        "@xotomicro/utility": "^0.0.6",
         "css-loader": "^6.2.0",
         "node-sass": "^6.0.1",
         "react": "^17.0.1",

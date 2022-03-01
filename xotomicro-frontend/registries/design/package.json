@@ -16,8 +16,7 @@
         "clean": "rm -rf build",
         "publish": "lerna run tsc && lerna publish",
         "test:service": "jest src --passWithNoTests --maxWorkers=50%",
-        "test:coverage": "jest src --passWithNoTests --maxWorkers=50% --coverage",
-        "sync:link": "yarn unlink || true && yarn link"
+        "test:coverage": "jest src --passWithNoTests --maxWorkers=50% --coverage"
     },
     "dependencies": {
         "@xotomicro/utility": "^0.0.5",

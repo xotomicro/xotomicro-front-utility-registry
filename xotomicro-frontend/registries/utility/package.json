@@ -9,7 +9,6 @@
     },
     "scripts": {
         "start": "echo OK",
-        "publish": "lerna run tsc && lerna publish",
-        "sync:link": "yarn unlink || true && yarn link"
+        "publish": "lerna run tsc && lerna publish"
     }
 }

@@ -1,7 +1,7 @@
 {
     "name": "@xotomicro/hooksystem",
     "private": true,
-    "version": "0.0.6",
+    "version": "0.0.7",
     "scripts": {
         "start": "webpack-cli serve --config config/webpack.dev.js",
         "build": "webpack --config config/webpack.prod.js",
@@ -11,7 +11,7 @@
         "test:coverage": "jest src --passWithNoTests --maxWorkers=50% --coverage"
     },
     "dependencies": {
-        "@xotomicro/utility": "^0.0.6",
+        "@xotomicro/utility": "^0.0.7",
         "css-loader": "^6.2.0",
         "node-sass": "^6.0.1",
         "react": "^17.0.1",

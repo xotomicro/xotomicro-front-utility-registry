@@ -2,8 +2,10 @@ version: "3"
 
 services:
     hooksystem:
-        build: ./
+        build:
+            context: ./
+            args:
+                - GITHUB_TOKEN=${GITHUB_TOKEN}
         container_name: hooksystem
-        image: hooksystem
         ports:
             - 7076:80

@@ -1,10 +1,11 @@
 version: "3"
 
 services:
-    
-  orderweb:
-    build: ./
-    container_name: orderweb
-    image: orderweb
-    ports:
-      - 7072:80
+    orderweb:
+        build:
+            context: ./
+            args:
+                - GITHUB_TOKEN=${GITHUB_TOKEN}
+        container_name: orderweb
+        ports:
+            - 7072:80

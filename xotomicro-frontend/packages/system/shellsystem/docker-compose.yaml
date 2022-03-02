@@ -1,9 +1,11 @@
 version: "3"
 
 services:
-  shellsystem:
-    build: ./
-    container_name: shellsystem
-    image: shellsystem
-    ports:
-      - 7070:80
+    shellsystem:
+        build:
+            context: ./
+            args:
+                - GITHUB_TOKEN=${GITHUB_TOKEN}
+        container_name: shellsystem
+        ports:
+            - 7070:80

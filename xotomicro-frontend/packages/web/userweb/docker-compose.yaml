@@ -1,11 +1,11 @@
 version: "3"
 
 services:
-
-  userweb:
-    build: ./
-    container_name: userweb
-    image: userweb
-    ports:
-      - 7074:80
-    
+    userweb:
+        build:
+            context: ./
+            args:
+                - GITHUB_TOKEN=${GITHUB_TOKEN}
+        container_name: userweb
+        ports:
+            - 7074:80

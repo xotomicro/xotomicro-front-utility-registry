@@ -4,15 +4,14 @@
 FROM node:16 as build-step
 ARG GITHUB_TOKEN
 
-RUN mkdir /app
 WORKDIR /app
-COPY . /app
+COPY . .
 RUN echo //npm.pkg.github.com/:_authToken=${GITHUB_TOKEN} >> .npmrc
 
 RUN yarn
 RUN yarn build
 
-# SERVICE : WEBAUTH
+# SERVICE
 FROM nginx:latest
 COPY --from=build-step /app/build /usr/share/nginx/html
 

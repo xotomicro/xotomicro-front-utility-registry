@@ -1,9 +1,10 @@
 version: "3"
 services:
-  
-  authweb:
-    build: ./
-    container_name: authweb
-    image: authweb
-    ports:
-      - 7075:80
+    authweb:
+        build:
+            context: ./
+            args:
+                - GITHUB_TOKEN=${GITHUB_TOKEN}
+        container_name: authweb
+        ports:
+            - 7075:80

@@ -16,7 +16,7 @@ const prodConfig = {
     entry: path.resolve(process.cwd(), "src/App.tsx"),
 
     output: {
-        publicPath: path.resolve(process.cwd(), "build"),
+        publicPath: "auto",
         path: path.resolve(process.cwd(), "build"),
         filename: "[name].[contenthash].js",
     },

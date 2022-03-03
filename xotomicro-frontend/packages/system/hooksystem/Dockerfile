@@ -10,8 +10,9 @@ RUN echo //npm.pkg.github.com/:_authToken=${GITHUB_TOKEN} >> .npmrc
 
 RUN yarn
 RUN yarn build
+RUN rm .npmrc
 
 # SERVICE
 FROM nginx:latest
-COPY --from=build-step /app/build /usr/share/nginx/html/app/build
+COPY --from=build-step /app/build /usr/share/nginx/html
 

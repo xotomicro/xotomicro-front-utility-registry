@@ -1,7 +1,7 @@
 {
     "name": "@xotomicro/authweb",
     "private": true,
-    "version": "0.0.8",
+    "version": "0.0.9",
     "description": "userweb of the pack",
     "scripts": {
         "start": "webpack-cli serve --config config/webpack.dev.js",
@@ -12,8 +12,8 @@
         "test:coverage": "jest src --passWithNoTests --maxWorkers=50% --coverage"
     },
     "dependencies": {
-        "@xotomicro/design": "^0.0.8",
-        "@xotomicro/utility": "^0.0.8",
+        "@xotomicro/design": "^0.0.9",
+        "@xotomicro/utility": "^0.0.9",
         "css-loader": "^6.2.0",
         "node-sass": "^6.0.1",
         "react": "^17.0.1",

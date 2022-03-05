@@ -1,7 +1,7 @@
 {
     "name": "@xotomicro/eventweb",
     "private": true,
-    "version": "0.0.98",
+    "version": "0.0.99",
     "description": "eventweb of the pack",
     "scripts": {
         "start": "webpack-cli serve --config config/webpack.dev.js",
@@ -15,7 +15,7 @@
         "test:coverage": "jest src --passWithNoTests --maxWorkers=50% --coverage"
     },
     "dependencies": {
-        "@xotomicro/utility": "^0.0.98",
+        "@xotomicro/utility": "^0.0.99",
         "css-loader": "^6.2.0",
         "node-sass": "^6.0.1",
         "react": "^17.0.1",

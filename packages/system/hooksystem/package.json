@@ -1,7 +1,7 @@
 {
   "name": "@xotomicro/hooksystem",
   "private": true,
-  "version": "0.0.104",
+  "version": "0.0.105",
   "description": "hooksystem of the xotomicro repo pack - 📦",
   "license": "ISC",
   "scripts": {
@@ -26,13 +26,13 @@
     ]
   },
   "dependencies": {
-    "@xotomicro/utility": "^0.0.104",
+    "@xotomicro/utility": "^0.0.105",
     "css-loader": "^6.2.0",
     "husky": "^7.0.2",
     "node-sass": "^6.0.1",
     "react": "^17.0.1",
-    "redux": "^4.1.1",
     "react-dom": "^17.0.1",
+    "redux": "^4.1.1",
     "sass-loader": "^12.1.0",
     "single-spa": "^5.8.3",
     "single-spa-react": "^3.2.0",

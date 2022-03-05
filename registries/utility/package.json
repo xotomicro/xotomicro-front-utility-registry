@@ -12,6 +12,6 @@
     },
     "scripts": {
         "start": "echo OK",
-        "publish": "lerna run tsc && lerna publish from-git"
+        "publish": "lerna run tsc && lerna publish"
     }
 }

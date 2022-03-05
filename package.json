@@ -39,6 +39,7 @@
         "test:all": "lerna run test --stream --since",
         "test:e2e": "lerna run test:e2e --stream --since",
         "test:coverage": "lerna run test:coverage --stream --since",
+        "registry:publish": "lerna run publish --stream --since",
 		"create:repo": "lerna run create:repo --stream"
     },
     "dependencies": {

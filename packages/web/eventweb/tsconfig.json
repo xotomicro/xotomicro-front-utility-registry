@@ -1,7 +1,7 @@
 {
     "extends": "./node_modules/@xotomicro/utility/lib/tsconfig.base.json",
     "compilerOptions": {
-        "allowSyntheticDefaultImports": true,
+        
         "esModuleInterop": true,
         "sourceMap": true,
         "strict": true,

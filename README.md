@@ -81,9 +81,7 @@ yarn test:coverage # test for code coverage
 4. publish
 ```shell
 # publish in the way you wish
-lerna publish # publish packages that have changed since the last release
-lerna publish from-git # explicitly publish packages tagged in the current commit
-lerna publish from-package # explicitly publish packages where the latest version is not present in the registry
+yarn run publish # will patch and publish packages that have changed since the last release
 
 ```
 

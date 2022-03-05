@@ -1,7 +1,7 @@
 {
   "name": "@xotomicro/shellsystem",
   "private": true,
-  "version": "0.0.101",
+  "version": "0.0.102",
   "description": "shellsystem of the xotomicro repo pack - 📦",
   "license": "ISC",
   "scripts": {
@@ -27,7 +27,7 @@
     ]
   },
   "dependencies": {
-    "@xotomicro/utility": "^0.0.101",
+    "@xotomicro/utility": "^0.0.102",
     "css-loader": "^6.2.0",
     "sass": "^1.45.1",
     "sass-loader": "^12.1.0",

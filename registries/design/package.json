@@ -1,7 +1,7 @@
 {
   "name": "@xotomicro/design",
   "private": false,
-  "version": "0.0.101",
+  "version": "0.0.102",
   "description": "design of the xotomicro repo pack - 📦",
   "license": "ISC",
   "types": "dist/__types__",
@@ -37,7 +37,7 @@
     ]
   },
   "dependencies": {
-    "@xotomicro/utility": "^0.0.101",
+    "@xotomicro/utility": "^0.0.102",
     "css-loader": "^6.2.0",
     "husky": "^7.0.2",
     "node-sass": "^6.0.1",

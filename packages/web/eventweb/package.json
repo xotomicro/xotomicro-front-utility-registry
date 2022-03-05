@@ -1,7 +1,7 @@
 {
   "name": "@xotomicro/eventweb",
   "private": true,
-  "version": "0.0.101",
+  "version": "0.0.102",
   "license": "ISC",
   "description": "eventweb of the xotomicro repo pack - 📦",
   "scripts": {
@@ -26,7 +26,7 @@
     ]
   },
   "dependencies": {
-    "@xotomicro/utility": "^0.0.101",
+    "@xotomicro/utility": "^0.0.102",
     "css-loader": "^6.2.0",
     "husky": "^7.0.2",
     "node-sass": "^6.0.1",

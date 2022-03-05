@@ -1,22 +1,21 @@
 {
     "name": "@xotomicro/shellsystem",
     "private": true,
-    "version": "0.0.9",
+    "version": "0.0.96",
     "scripts": {
         "start": "webpack-cli serve --config config/webpack.dev.js",
         "build": "webpack --config config/webpack.prod.js",
         "serve": "serve build",
         "clean": "rm -rf build",
- "format:prettify": "prettier './src/**/*' --ignore-path ./.gitignore --config ./.prettierrc.js --write",
+        "format:prettify": "prettier './src/**/*' --ignore-path ./.gitignore --config ./.prettierrc.js --write",
         "lint:es": "eslint '**/*.{js,jsx,ts,tsx}' -f codeframe --ignore-path ./.eslintignore --fix --cache --cache-location 'node_modules/.cache/eslint/'",
         "lint:style": "stylelint '**/*.scss' --config ./.stylelintrc.js --cache --cache-location 'node_modules/.cache/stylelint/' --fix --custom-syntax postcss-less",
         "test:service": "jest src --passWithNoTests --maxWorkers=50%",
         "test:coverage": "jest src --passWithNoTests --maxWorkers=50% --coverage",
         "create:repo": "sh ./node_modules/@xotomicro/utility/lib/scripts/git-util.sh serviceRepoCreate"
-
     },
     "dependencies": {
-        "@xotomicro/utility": "^0.0.95",
+        "@xotomicro/utility": "^0.0.96",
         "css-loader": "^6.2.0",
         "sass": "^1.45.1",
         "sass-loader": "^12.1.0",
@@ -37,7 +36,6 @@
         "eslint": "^7.32.0",
         "eslint-config-prettier": "^8.3.0",
         "eslint-formatter-codeframe": "^7.32.1",
-
         "eslint-plugin-import": "^2.25.4",
         "eslint-plugin-jest": "^24.7.0",
         "eslint-plugin-json": "^3.1.0",
@@ -46,7 +44,7 @@
         "html-webpack-plugin": "^5.3.2",
         "husky": "^7.0.2",
         "jest": "^26.6.3",
-"postcss-less": "^6.0.0",
+        "postcss-less": "^6.0.0",
         "prettier": "^2.5.1",
         "prettier-eslint": "^13.0.0",
         "semver": "^7.3.4",

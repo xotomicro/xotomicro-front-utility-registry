@@ -11,7 +11,7 @@ eval $(minikube docker-env)
 
 ### 🏗 BUILD ALL DOCKER IMAGES BY DOCKER-COMPOSE
 ```shell
-docker-compose build
+docker-compose up --build -d
 ```
 ### 🖥 OTHER USEFUL COMMANDS
 

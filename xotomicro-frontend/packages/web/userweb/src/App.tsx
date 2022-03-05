@@ -4,7 +4,7 @@ import singleSpaReact from "single-spa-react";
 import {UserWeb} from "./components/user/UserWeb";
 import {GlobalStoreModel} from "./model/GlobalStoreModel";
 
-import "./style/index.scss";
+import "./style/overwrite.scss";
 
 export let globalEventDistributor: GlobalStoreModel;
 

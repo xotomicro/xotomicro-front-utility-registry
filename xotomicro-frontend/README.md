@@ -1,65 +1,118 @@
 <div align="center">
-	<h1> Monorepo and Micro-Frontends 👋  </h1>
-	<img  src="./fontend/documentation/example-monorepo.jpg" width="50%">
+	<h1> Monorepo and Micro-Frontend Boilerplate 👋  </h1>
+	<img  src="/documentation/frontend/example-monorepo.jpg" width="50%">
 </div>
 <br>
 
-### 🎭 INFORMATION
-- micro-front ends can work as standalone and only be dependent of hooksystem and shellsystem services
-- micro-front ends can be composed with the help of docker and lerna via the commands below
-
-- root packages : packages needed to run the any other webapps from packages/web
 ### 🏗️ ARCHITECTURE
 
-<img src="./fontend/documentation/example-architecture.png" width="800">
+<img src="/documentation/frontend/example-architecture.png" width="800">
 
+### 🤷🏼‍♂️ SERVICES REQUIREMENT
+micro-front ends can work as standalone and is only dependent of the ***hooksystem*** and the ***shellsystem*** service
+
+- hooksystem
+	- the system that encapsulates components and renders them on a specific section app/page. 
+	
+- shellsystem
+	- the system that hosts all data passed by the ***global event distributor*** and shells all services independently
+
+### 🎭 MONOREPO STRUCTURE
+```sh
+# git submodules
+ git clone --recurse-submodules -j8 https://github.com/xotomicro/xotomicro-frontend.git > /dev/null # to import all micro services into the monorepo
+```
 ### 🐳 COMMAND
 
 ```sh
-# YARN
-yarn # install 'lerna' and root deps
-yarn boot # bootstrap packages and clean all node_modules with lerna
+# starting monorepo - yarn
+yarn # installs 'lerna' and root deps
+yarn boot # bootstraps packages and cleans all node_modules with lerna
 
+# example : 
 yarn start:user # if you want to run independent services -> (or yarn start:{service})
+
 yarn start # if you want to run all services
 ``` 
 
 ```sh
-# DOCKER ALL IN ONE
-docker-compose up --build -d && open http://${process.env.SERVICE_URL}:7070/ # deploy all to docker
+# starting monorepo - docker
+export GITHUB_TOKEN={GITHUB_TOKEN} # first set accessibility rules for your team and add your github token like so 
+docker-compose up --build -d # deploy all services to docker
+```
+
+```sh
+# lints and more
+yarn lint:es # lint checks and fixes for all files
+yarn lint:style # lint for styles for all files
+yarn format:prettify # fixes format issues across all micro-front ends and keeps your team in sync with formatting issues
 ``` 
 
 ```sh
-# STYLE COMMANDS
-yarn lint:es # lint checks all files
-yarn lint:style # lint for styles
-yarn format:prettify # fixes format issues across all micro-front ends 
-``` 
-
-```sh
-# TEST COMMANDS
+# tests
 yarn test:all # test for all unit tests
 yarn test:e2e # test for end to end cypress
 yarn test:coverage # test for code coverage
 ```
 
-### 📜 DOCUMENTATION
+### REGISTRIES - MONOREPO
+
+1. lerna.json contains the global registry url
+``` json
+{
+  "command": {
+    "publish": {
+      "ignoreChanges": ["ignored-file", "*.md"],
+      "message": "chore(release): publish",
+      "registry": "https://npm.pkg.github.com"
+    }
+  },
+}
+```
+
+2. complete checklist for registry - design : 
+- [DESIGN-REGISTRY](./registries/design/documentation/registries.md)
+
+3. complete checklist for registry - utility : 
+- [UTILITY-REGISTRY](./registries/utility/documentation/registries.md)
+
+4. publish
+```shell
+# publish in the way you wish
+lerna publish # publish packages that have changed since the last release
+lerna publish from-git # explicitly publish packages tagged in the current commit
+lerna publish from-package # explicitly publish packages where the latest version is not present in the registry
+
+```
+
+### 📜 DOCUMENTATION KUBERNETES
 -   [KUBERNETES](./kubernetes/README.md) : main readme for frontend kubernetes (local kubectl & minikube)
 
-### 🌸 WEB APP
+### 🌸 WEB APP DOCUMENTATION
+
 1. WEB APPS
-- [WEB-APP WEBAUTH](./packages/web/authweb/README.md) documentation - authweb service
-- [WEB-APP WEBEVENT](./packages/web/eventweb/README.md) documentation - eventweb service
-- [WEB-APP WEBORDER](./packages/web/orderweb/README.md) documentation - orderweb service
-- [WEB-APP WEBPRODUCT](./packages/web/productweb/README.md) documentation - productweb service
-- [WEB-APP WEBUSER](./packages/web/userweb/README.md) documentation - userweb service
-2. CONTAINER APPS
-- [CONTAINER-APP hooksystem](./packages/system/hooksystem/README.md) documentation - hooksystem service
-- [CONTAINER-APP shellsystem](./packages/system/shellsystem/README.md) documentation - shellsystem service
+- [WEB-APP WEBAUTH](./packages/web/authweb/README.md) documentation/backend - authweb service
+- [WEB-APP WEBEVENT](./packages/web/eventweb/README.md) documentation/backend - eventweb service
+- [WEB-APP WEBORDER](./packages/web/orderweb/README.md) documentation/backend - orderweb service
+- [WEB-APP WEBPRODUCT](./packages/web/productweb/README.md) documentation/backend - productweb service
+- [WEB-APP WEBUSER](./packages/web/userweb/README.md) documentation/backend - userweb service
+
+2. SYSTEM APPS
+- [SYSTEM-APP hooksystem](./packages/system/hooksystem/README.md) documentation/backend - hooksystem service
+- [SYSTEM-APP shellsystem](./packages/system/shellsystem/README.md) documentation/backend - shellsystem service
+
+### 👤 AUTHOR
+
+ **xotosphere organization**
+-   Github: [@xotosphere](https://github.com/xotosphere)
+
+### 📝 LICENSE
+
+Copyright © 2021 [XOTOSPHERE](https://github.com/xotosphere).<br/>
+This project is [ISC](https://github.com/xotosphere/xotomicro-frontend/blob/main/LICENSE) licensed.
 
 ### 🛳 PORTS
 | ROOTSHELL | WEBEVENT | WEBORDER | WEBPRODUCT | WEBUSER | WEBAUTH | hooksystem |
 | --------- | -------- | -------- | ---------- | ------- | ------- | ---------- |
 | 7070      | 7071     | 7072     | 7073       | 7074    | 7075    | 7076       |
-
 

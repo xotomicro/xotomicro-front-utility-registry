@@ -2,6 +2,7 @@ module.exports = {
     extends: ["stylelint-config-standard"],
     plugins: ["stylelint-scss", "stylelint-order"],
     ignoreFiles: ["node_modules/**", "src/assets/fonts/**", "src/assets/scss/reset.scss", "src/plugins", "src/utils"],
+	customSyntax: "postcss-less",
     rules: {
         indentation: [4],
         "unit-disallowed-list": ["px"],

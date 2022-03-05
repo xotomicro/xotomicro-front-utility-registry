@@ -5,12 +5,23 @@ The React Application
 - run shellsystem
 - run hooksystem
 
-## INSTALLING AND RUNNING THE APPLICATION
-1. RUN
+## INSTALL AND RUN THE APP - YARN
 ```shell
 yarn # install dependencies
 yarn start # start application
 ```
 
-2. ACCESS 
-  - GO TO http://${process.env.SERVICE_URL}:7073
+## INSTALL AND RUN THE APP - DOCKER
+```sh
+# starting with docker
+export GITHUB_TOKEN={GITHUB_TOKEN} # first set accessibility rules for your team and add your github token like so 
+docker-compose up --build -d # deploy service to docker
+# build service without docker compose
+docker build -t {SERVICE_NAME} . --progress plain --no-cache --build-arg GITHUB_TOKEN={GITHUB_TOKEN}
+
+
+```
+
+
+- ACCESS 
+  * GO TO http://localhost:7073

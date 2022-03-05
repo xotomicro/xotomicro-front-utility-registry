@@ -1,3 +1,3 @@
 module.exports = {
-	extends: ["./node_modules/@xotomicro/utility/lib/.stylelintrc.js"],
-}
+    extends: ["./node_modules/@xotomicro/utility/lib/.stylelintrc.js"],
+};

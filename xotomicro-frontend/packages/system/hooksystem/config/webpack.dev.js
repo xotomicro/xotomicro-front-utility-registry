@@ -1,13 +1,13 @@
-const {EnvironmentPlugin} = require("webpack")
-const {merge} = require("webpack-merge")
-const ModuleFederationPlugin = require("webpack/lib/container/ModuleFederationPlugin")
-const commonConfig = require("./webpack.common")
-const deps = require("../package.json").dependencies
-require("dotenv").config({path: "node_modules/@xotomicro/utility/lib/global.env"})
-require("dotenv").config()
+const {EnvironmentPlugin} = require("webpack");
+const {merge} = require("webpack-merge");
+const ModuleFederationPlugin = require("webpack/lib/container/ModuleFederationPlugin");
+const commonConfig = require("./webpack.common");
+const deps = require("../package.json").dependencies;
+require("dotenv").config({path: "node_modules/@xotomicro/utility/lib/global.env"});
+require("dotenv").config();
 
 // eslint-disable-next-line no-undef
-__webpack_base_uri__ = `http://${process.env.SERVICE_URL}:${process.env.SERVICE_PORT}`
+__webpack_base_uri__ = `http://${process.env.SERVICE_URL}:${process.env.SERVICE_PORT}`;
 
 const devConfig = {
     mode: "development",
@@ -44,6 +44,6 @@ const devConfig = {
             ],
         }),
     ],
-}
+};
 
-module.exports = merge(commonConfig, devConfig)
+module.exports = merge(commonConfig, devConfig);

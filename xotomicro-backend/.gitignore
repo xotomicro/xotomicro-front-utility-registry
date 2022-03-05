@@ -1,90 +1,91 @@
-# **/node_modules
-# **/dist
-# **/lib
-# lerna-debug.log
+**/node_modules
+**/dist
+**/lib
+lerna-debug.log
 
-# ### CUSTOM ###
-# *.iml
+### CUSTOM ###
+*.iml
+.idea
 
-# # IGNORE ARTIFACTS:
+# IGNORE ARTIFACTS:
 
-# build
-# coverage
-# target
-# **/.eslintcache
-# **/coverage
+build
+coverage
+target
+**/.eslintcache
+**/coverage
 
-# dist
-# node_modules/
-# coverage/
-# lerna-debug.log
+dist
+node_modules/
+coverage/
+lerna-debug.log
 
-# ### MACOS ###
+### MACOS ###
 
-# # GENERAL
+# GENERAL
 
-# .DS_Store
-# .AppleDouble
-# .LSOverride
+.DS_Store
+.AppleDouble
+.LSOverride
 
-# # THUMBNAILS
+# THUMBNAILS
 
-# ._*
+._*
 
-# # FILES THAT MIGHT APPEAR IN THE ROOT OF A VOLUME
+# FILES THAT MIGHT APPEAR IN THE ROOT OF A VOLUME
 
-# .DocumentRevisions-V100
-# .fseventsd
-# .Spotlight-V100
-# .TemporaryItems
-# .Trashes
-# .VolumeIcon.icns
-# .com.apple.timemachine.donotpresent
+.DocumentRevisions-V100
+.fseventsd
+.Spotlight-V100
+.TemporaryItems
+.Trashes
+.VolumeIcon.icns
+.com.apple.timemachine.donotpresent
 
-# # DIRECTORIES POTENTIALLY CREATED ON REMOTE AFP SHARE
+# DIRECTORIES POTENTIALLY CREATED ON REMOTE AFP SHARE
 
-# .AppleDB
-# .AppleDesktop
-# Network Trash Folder
-# Temporary Items
-# .apdisk
+.AppleDB
+.AppleDesktop
+Network Trash Folder
+Temporary Items
+.apdisk
 
-# ### VISUALSTUDIOCODE ###
+### VISUALSTUDIOCODE ###
 
-# .vscode/*
-# !.vscode/settings.json
-# !.vscode/tasks.json
-# !.vscode/launch.json
-# !.vscode/extensions.json
-# *.code-workspace
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+*.code-workspace
 
-# ### VISUALSTUDIOCODE PATCH ###
+### VISUALSTUDIOCODE PATCH ###
 
-# # IGNORE ALL LOCAL HISTORY OF FILES
+# IGNORE ALL LOCAL HISTORY OF FILES
 
-# .history
+.history
 
-# # END OF HTTPS://WWW.TOPTAL.COM/DEVELOPERS/GITIGNORE/API/VISUALSTUDIOCODE,MACOS
+# END OF HTTPS://WWW.TOPTAL.COM/DEVELOPERS/GITIGNORE/API/VISUALSTUDIOCODE,MACOS
 
-# # DOCKER
+# DOCKER
 
-# # OS
+# OS
 
-# .DS_Store
+.DS_Store
 
-# # DATABASE
+# DATABASE
 
-# database/*
-# !database/.gitkeep
+database/*
+!database/.gitkeep
 
-# #**/lib
-# # .idea
-# .eslintcache
+#**/lib
+# .idea
+.eslintcache
 
-# dump.rdb
+dump.rdb
 
-# # CAPACITOR
+# CAPACITOR
 
-# **/ios
-# **/android
-# .idea/
+**/ios
+**/android
+.idea/

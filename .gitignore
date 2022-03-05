@@ -7,7 +7,6 @@ lerna-debug.log
 .userservice/.idea/
 .userservice/target/
 *.iml
-# .env
 
 # IGNORE ARTIFACTS:
 
@@ -63,13 +62,9 @@ Temporary Items
 
 ### VISUALSTUDIOCODE PATCH ###
 
-# IGNORE ALL LOCAL HISTORY OF FILES
+# HISTORY
 
 .history
-
-# END OF HTTPS://WWW.TOPTAL.COM/DEVELOPERS/GITIGNORE/API/VISUALSTUDIOCODE,MACOS
-
-# DOCKER
 
 # OS
 

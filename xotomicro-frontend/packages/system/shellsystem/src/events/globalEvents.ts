@@ -1,5 +1,3 @@
-// import {GlobalStoreClass} from "../classes/globalStoreClass";
-
 class GlobalStoreClass {
     username: string;
 }

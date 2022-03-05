@@ -1,23 +1,44 @@
-## WEBUSER
+### WEBUSER
 The React Application
 
-## PREREQUISITE
+### PREREQUISITE
 - run shellsystem
 - run hooksystem
 
-## INSTALLING AND RUNNING THE APPLICATION
-1. RUN
+### INSTALL AND RUN THE APP - YARN
 ```shell
 yarn # install dependencies
 yarn start # start application
 ```
 
-2. ACCESS 
-  - GO TO http://${process.env.SERVICE_URL}:7075
+### INSTALL AND RUN THE APP - DOCKER
+```sh
+# starting with docker
+export GITHUB_TOKEN={GITHUB_TOKEN} # first set accessibility rules for your team and add your github token like so 
+docker-compose up --build -d # deploy service to docker
+# build service without docker compose
+docker build -t {SERVICE_NAME} . --progress plain --no-cache --build-arg GITHUB_TOKEN={GITHUB_TOKEN}
+
+
+```
+
+### INSTALL AND RUN THE APP - DOCKER
+```sh
+# starting with docker
+export GITHUB_TOKEN={GITHUB_TOKEN} # first set accessibility rules for your team and add your github token like so 
+docker-compose up --build -d # deploy service to docker
+# build service without docker compose
+docker build -t {SERVICE_NAME} . --progress plain --no-cache --build-arg GITHUB_TOKEN={GITHUB_TOKEN}
+
+
+```
+
+- ACCESS 
+  * GO TO http://localhost:7075
 
 <hr>
 
-## INFO
+### INFORMATION
 TESTING FOR USERS
 
 ```shell
@@ -38,7 +59,7 @@ Username: user3
 Password: password3
  ```
 
-*REQUEST*
+> *REQUEST*
 ```shell
 curl --location --request POST 'http://${process.env.SERVICE_URL}:8080/auth/login' \
 --header 'Content-Type: application/json' \
@@ -47,7 +68,7 @@ curl --location --request POST 'http://${process.env.SERVICE_URL}:8080/auth/logi
     "password": "password1"
 }'
 ```
-*RESPONSE*
+> *RESPONSE*
 ```json
 {
     "token": "eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiIxIiwiaWF0IjoxNjI5MDI5MjQ3LCJpc3MiOiJBdXRoU2VydmljZSIsImV4cCI6MTYyOTAzMDE0N30.elcks-Vmt9LDQ7f7jActiYiAfnA36MFfGCHE3-lMc98",
@@ -56,13 +77,13 @@ curl --location --request POST 'http://${process.env.SERVICE_URL}:8080/auth/logi
 }
 ```
 
-### GET USERS
-*REQUEST*
+#### GET USERS
+> *REQUEST*
 ```shell
 curl --location --request GET 'http://${process.env.SERVICE_URL}:8080/users' \
 --header 'Authorization: eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiIxIiwiaWF0IjoxNjI5MDI5MjQ3LCJpc3MiOiJBdXRoU2VydmljZSIsImV4cCI6MTYyOTAzMDE0N30.elcks-Vmt9LDQ7f7jActiYiAfnA36MFfGCHE3-lMc98'
 ```
-*RESPONSE*
+> *RESPONSE*
 ```json
 [
     { "id": 1, "username": "user1", "scope": "admin", "fullName": "Name 1" },

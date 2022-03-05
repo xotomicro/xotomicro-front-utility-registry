@@ -3,9 +3,10 @@
 
 import { start, registerApplication } from "single-spa";
 import { GlobalEventDistributor } from "./events/globalEvents";
+
 const globalEventDistributor: GlobalEventDistributor = new GlobalEventDistributor();
 
-import("./design/index.scss");
+import("./style/overwrite.scss");
 
 /**
  * Register applications here

@@ -1,4 +1,4 @@
-name: ci
+name: shellsystem-ci
 
 on:
   push:

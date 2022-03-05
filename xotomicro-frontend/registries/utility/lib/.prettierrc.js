@@ -3,11 +3,8 @@ module.exports = {
     printWidth: 200,
     tabWidth: 4,
 	singleQuote: false,
-	
     bracketSpacing: false,
-    jsxBracketSameLine: false,
     useTabs: false,
     arrowParens: "avoid",
-    jsxSingleQuote: false,
-    // trailingComma: "all",
+    jsxSingleQuote: false
 };

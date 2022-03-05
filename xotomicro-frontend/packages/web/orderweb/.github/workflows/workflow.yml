@@ -1,4 +1,4 @@
-name: ci
+name: orderweb-ci
 
 on:
   push:

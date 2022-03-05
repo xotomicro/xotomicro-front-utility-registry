@@ -1,4 +1,4 @@
-name: ci
+name: eventweb-ci
 
 on:
   push:

@@ -5,7 +5,7 @@ import {LifeCycleFn} from "single-spa";
 import {NavBar} from "./components/NavBar";
 import {GlobalStoreModel} from "./model/GlobalStoreModel";
 
-import "./style/index.scss";
+import "./style/overwrite.scss";
 
 export let globalEventDistributor: GlobalStoreModel;
 

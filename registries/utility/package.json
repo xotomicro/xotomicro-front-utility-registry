@@ -1,18 +1,18 @@
 {
-    "name": "@xotomicro/utility",
-    "private": false,
-    "version": "0.0.100",
-    "repository": "https://github.com/xotomicro/xotomicro-frontend",
-    "files": [
-        "lib/**/*"
-    ],
-    "publishConfig": {
-        "registry": "https://npm.pkg.github.com/@xotomicro-utility",
-        "access": "public"
-    },
-    "scripts": {
-        "start": "echo OK",
-        "publish": "lerna run tsc && lerna publish patch --yes"
-    },
-    "gitHead": "6a580660f3ee941a8403859221bf5110f797d9ff"
+  "name": "@xotomicro/utility",
+  "private": false,
+  "version": "0.0.100",
+  "description": "utils of the xotomicro repo pack - 📦",
+  "license": "ISC",
+  "repository": "https://github.com/xotomicro/xotomicro-frontend",
+  "files": ["lib/**/*"],
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/@xotomicro-utility",
+    "access": "public"
+  },
+  "scripts": {
+    "start": "echo OK",
+    "publish": "lerna run tsc && lerna publish patch --yes"
+  },
+  "gitHead": "6a580660f3ee941a8403859221bf5110f797d9ff"
 }

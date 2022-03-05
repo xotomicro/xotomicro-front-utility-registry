@@ -26,6 +26,8 @@ micro-front ends can work as standalone and is only dependent of the ***hooksyst
 
 ```sh
 # starting monorepo - yarn
+npm i lerna -g # make sure you first have lerna as a global dependencie
+
 yarn # installs 'lerna' and root deps
 yarn boot # bootstraps packages and cleans all node_modules with lerna
 

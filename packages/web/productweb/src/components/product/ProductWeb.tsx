@@ -11,7 +11,6 @@ export const ProductWeb: any = (props: any): JSX.Element => {
         <div className="section-app__item">
             <p>Add product</p>
             <AddProductApi token={token} update={update} setUpdate={setUpdate} />
-
             <p>Product list</p>
             <ProductApi token={token} update={update} />
         </div>

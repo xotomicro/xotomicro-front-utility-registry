@@ -1,5 +1,5 @@
 class GlobalStoreClass {
-    username: string
+    username: string | undefined
 }
 
 export class GlobalEventDistributor {

@@ -9,6 +9,7 @@ node_modules/
 # OPTIONAL NPM CACHE DIRECTORY
 .npm
 .idea
+./parent.iml
 
 # OPTIONAL ESLINT CACHE
 .eslintcache

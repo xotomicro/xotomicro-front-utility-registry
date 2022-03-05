@@ -1,72 +1,86 @@
 {
-    "name": "xotomicro-frontend",
-    "description": "",
-    "license": "ISC",
-    "private": true,
-    "workspaces": {
-        "nohoist": [
-            "**"
-        ],
-        "packages": [
-            "packages/web/*",
-            "packages/system/*",
-            "registries/*"
-        ]
-    },
-    "resolutions": {
-        "webpack": "5.9.0"
-    },
-    "scripts": {
-        "boot": "yarn clean && yarn initialize",
-        "clean": "lerna clean --yes && lerna exec -- rm -rf build",
-        "build": "lerna run build --stream",
-        "bootstrap": "lerna bootstrap",
-        "initialize": "lerna exec yarn install",
-        "start": "lerna exec yarn start --parallel",
-        "start:app": "lerna run start --stream --scope={authweb,eventweb,orderweb,productweb,userweb}",
-        "start:root": "lerna run start --stream --scope={shellsystem,hooksystem}",
-        "start:shellsystem": "lerna run start --stream --scope=shellsystem",
-        "start:hooksystem": "lerna run start --stream --scope=hooksystem",
-        "start:eventweb": "lerna run start --stream --scope=eventweb",
-        "start:orderweb": "lerna run start --stream --scope=orderweb",
-        "start:authweb": "lerna run start --stream --scope=authweb",
-        "start:productweb": "lerna run start --stream --scope=productweb",
-        "start:userweb": "lerna run start --stream --scope=userweb",
-        "format:prettify": "lerna run format:prettify --stream",
-        "lint:es": "lerna run lint:es --stream",
-        "lint:style": "lerna run lint:style --stream",
-        "test:all": "lerna run test --stream --since",
-        "test:e2e": "lerna run test:e2e --stream --since",
-        "test:coverage": "lerna run test:coverage --stream --since",
-        "publish": "lerna run publish --stream",
-		"create:repo": "lerna run create:repo --stream"
-    },
-    "dependencies": {
-        "lerna": "^4.0.0"
-    },
-    "devDependencies": {
-        "@types/jest": "^26.0.15",
-        "@types/node": "^16.7.1",
-        "@typescript-eslint/eslint-plugin": "^4.33.0",
-        "@typescript-eslint/parser": "^4.33.0",
-        "eslint": "^7.32.0",
-        "eslint-config-prettier": "^8.3.0",
-        "eslint-formatter-codeframe": "^7.32.1",
-        "eslint-plugin-import": "^2.25.4",
-        "eslint-plugin-jest": "^24.7.0",
-        "eslint-plugin-json": "^3.1.0",
-        "eslint-plugin-prettier": "^3.4.1",
-        "eslint-plugin-react": "^7.28.0",
-        "husky": "^7.0.2",
-        "jest": "^26.6.3",
-        "postcss-less": "^6.0.0",
-        "prettier": "^2.5.1",
-        "prettier-eslint": "^13.0.0",
-        "stylelint": "^13.13.1",
-        "stylelint-config-standard": "^22.0.0",
-        "stylelint-order": "^4.1.0",
-        "stylelint-scss": "^3.20.1",
-        "ts-jest": "^26.4.4",
-        "typescript": "^4.3.5"
-    }
+  "name": "xotomicro-frontend",
+  "description": "xotomicro-frontend root of the xotomicro repo pack - 📦",
+  "license": "ISC",
+  "private": true,
+  "workspaces": {
+    "nohoist": [
+      "**"
+    ],
+    "packages": [
+      "packages/web/*",
+      "packages/system/*",
+      "registries/*"
+    ]
+  },
+  "resolutions": {
+    "webpack": "5.9.0"
+  },
+  "scripts": {
+    "boot": "yarn clean && yarn initialize",
+    "clean": "lerna clean --yes && lerna exec -- rm -rf build",
+    "build": "lerna run build --stream",
+    "bootstrap": "lerna bootstrap",
+    "initialize": "lerna exec yarn install",
+    "start": "lerna exec yarn start --parallel",
+    "start:app": "lerna run start --stream --scope={authweb,eventweb,orderweb,productweb,userweb}",
+    "start:root": "lerna run start --stream --scope={shellsystem,hooksystem}",
+    "start:shellsystem": "lerna run start --stream --scope=shellsystem",
+    "start:hooksystem": "lerna run start --stream --scope=hooksystem",
+    "start:eventweb": "lerna run start --stream --scope=eventweb",
+    "start:orderweb": "lerna run start --stream --scope=orderweb",
+    "start:authweb": "lerna run start --stream --scope=authweb",
+    "start:productweb": "lerna run start --stream --scope=productweb",
+    "start:userweb": "lerna run start --stream --scope=userweb",
+    "format:prettify": "lerna run format:prettify --stream",
+    "lint:es": "lerna run lint:es --stream",
+    "lint:style": "lerna run lint:style --stream",
+    "test:all": "lerna run test --stream --since",
+    "test:e2e": "lerna run test:e2e --stream --since",
+    "test:coverage": "lerna run test:coverage --stream --since",
+    "publish": "lerna run publish --stream",
+    "create:repo": "lerna run create:repo --stream"
+  },
+  "lint-staged": {
+    "*.(tsx|html|css)": [
+      "lerna run format:prettify",
+      "lerna run lint:es"
+    ],
+    "*.scss": [
+      "lerna run lint:style"
+    ]
+  },
+  "dependencies": {
+    "lerna": "^4.0.0"
+
+  },
+  "devDependencies": {
+    "@types/jest": "^26.0.15",
+    "@types/node": "^16.7.1",
+    "@typescript-eslint/eslint-plugin": "^4.33.0",
+    "@typescript-eslint/parser": "^4.33.0",
+    "eslint": "^7.32.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-formatter-codeframe": "^7.32.1",
+    "eslint-plugin-import": "^2.25.4",
+    "eslint-plugin-jest": "^24.7.0",
+    "eslint-plugin-json": "^3.1.0",
+    "eslint-plugin-prettier": "^3.4.1",
+    "eslint-plugin-react": "^7.28.0",
+
+
+"tsconfig-paths-webpack-plugin": "^3.5.2",
+"eslint-import-resolver-typescript": "^2.5.0",
+    "jest": "^26.6.3",
+    "lint-staged": "^12.3.5",
+    "postcss-less": "^6.0.0",
+    "prettier": "^2.5.1",
+    "prettier-eslint": "^13.0.0",
+    "stylelint": "^13.13.1",
+    "stylelint-config-standard": "^22.0.0",
+    "stylelint-order": "^4.1.0",
+    "stylelint-scss": "^3.20.1",
+    "ts-jest": "^26.4.4",
+    "typescript": "^4.3.5"
+  }
 }

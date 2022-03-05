@@ -13,5 +13,6 @@
     "scripts": {
         "start": "echo OK",
         "publish": "lerna run tsc && lerna publish patch --yes"
-    }
+    },
+    "gitHead": "1e38cec5b26791c5de3cd2949ed42012de0e40eb"
 }

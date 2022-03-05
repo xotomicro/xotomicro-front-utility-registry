@@ -21,6 +21,7 @@
 			"@style/*": ["/src/style/*"],
 			"@events/*": ["/src/events/*"],
 			"@utils/*": ["/src/utils/*"],
+			"@components/*": ["/src/components/*"],
 		}
 	}
 }

@@ -5,9 +5,8 @@
   "description": "utils of the xotomicro repo pack - 📦",
   "license": "ISC",
   "repository": "https://github.com/xotomicro/xotomicro-frontend",
-  "files": [
-    "lib/**/*"
-  ],
+  "files": ["lib/**/*"],
+  "lint-staged": {"*.(tsx|html|css)": []},
   "publishConfig": {
     "registry": "https://npm.pkg.github.com/@xotomicro-utility",
     "access": "public"
@@ -16,5 +15,7 @@
     "start": "echo OK",
     "publish": "lerna run tsc && lerna publish patch --yes"
   },
+  "dependencies": {"husky": "^7.0.2"},
+  "devDependencies": {"lint-staged": "^12.3.5"},
   "gitHead": "94eaf7f320762170d3b62adcfaa3f83e22c26e5f"
 }

@@ -1,7 +1,7 @@
 {
   "name": "@xotomicro/productweb",
   "private": true,
-  "version": "0.0.105",
+  "version": "0.0.106",
   "license": "ISC",
   "description": "productweb of the xotomicro repo pack - 📦",
   "scripts": {
@@ -25,7 +25,7 @@
     ]
   },
   "dependencies": {
-    "@xotomicro/utility": "^0.0.105",
+    "@xotomicro/utility": "^0.0.106",
     "css-loader": "^6.2.0",
     "husky": "^7.0.2",
     "node-sass": "^6.0.1",

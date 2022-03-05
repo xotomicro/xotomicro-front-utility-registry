@@ -6,7 +6,10 @@
         "sourceMap": true,
         "strict": true,
         "types": ["jest", "node"],
-        "jsx": "react"
+        "jsx": "react",
+		"paths": {
+			// overrides
+		}
     },
     "include": ["src/**/*"]
 }

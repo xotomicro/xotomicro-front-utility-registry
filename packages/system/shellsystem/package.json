@@ -12,7 +12,7 @@
         "lint:style": "stylelint '**/*.scss' --config ./.stylelintrc.js --cache --cache-location 'node_modules/.cache/stylelint/' --fix --custom-syntax postcss-less",
         "test:service": "jest src --passWithNoTests --maxWorkers=50%",
         "test:coverage": "jest src --passWithNoTests --maxWorkers=50% --coverage",
-		        "create:repo": "sh git-utils.sh serviceRepoCreate"
+        "create:repo": "sh ./node_modules/@xotomicro/utility/lib/scripts/git-util.sh serviceRepoCreate"
 
     },
     "dependencies": {

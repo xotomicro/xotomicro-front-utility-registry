@@ -1,11 +1,13 @@
 {
   "name": "@xotomicro/utility",
   "private": false,
-  "version": "0.0.100",
+  "version": "0.0.101",
   "description": "utils of the xotomicro repo pack - 📦",
   "license": "ISC",
   "repository": "https://github.com/xotomicro/xotomicro-frontend",
-  "files": ["lib/**/*"],
+  "files": [
+    "lib/**/*"
+  ],
   "publishConfig": {
     "registry": "https://npm.pkg.github.com/@xotomicro-utility",
     "access": "public"

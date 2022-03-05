@@ -12,7 +12,6 @@
     },
     "scripts": {
         "start": "echo OK",
-        "publish": "lerna run tsc && lerna run tsc && lerna publish --conventional-prerelease --exact --no-changelog --dist-tag beta --pre-dist-tag beta --no-verify-access --yes"
-    },
-    "gitHead": "3c644337a1902cec0a89fc9dd722fb92ed52791a"
+        "publish": "lerna run tsc && lerna publish patch --yes"
+    }
 }

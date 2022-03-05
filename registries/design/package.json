@@ -20,7 +20,7 @@
         "format:prettify": "prettier './src/**/*' --ignore-path ./.gitignore --config ./.prettierrc.js --fix",
         "lint:es": "eslint '**/*.{js,jsx,ts,tsx}' -f codeframe --ignore-path ./.eslintignore --fix --cache --cache-location 'node_modules/.cache/eslint/'",
         "lint:style": "stylelint '**/*.scss' --config ./.stylelintrc.js --cache --cache-location 'node_modules/.cache/stylelint/' --fix --custom-syntax postcss-less",
-        "publish": "lerna run tsc && lerna publish --conventional-prerelease --exact --no-changelog --dist-tag beta --pre-dist-tag beta --no-verify-access --yes",
+        "publish": "lerna run tsc && lerna run tsc && lerna publish patch --yes",
         "test:service": "jest src --passWithNoTests --maxWorkers=50%",
         "test:coverage": "jest src --passWithNoTests --maxWorkers=50% --coverage"
     },
@@ -81,6 +81,5 @@
         "webpack-cli": "^4.2.0",
         "webpack-dev-server": "^3.11.0",
         "webpack-merge": "^5.4.0"
-    },
-    "gitHead": "3c644337a1902cec0a89fc9dd722fb92ed52791a"
+    }
 }

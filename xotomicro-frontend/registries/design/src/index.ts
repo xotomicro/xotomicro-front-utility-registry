@@ -1,1 +1,1 @@
-export {AppButton} from "./components/AppButton"
+export {AppButton} from "./components/AppButton";

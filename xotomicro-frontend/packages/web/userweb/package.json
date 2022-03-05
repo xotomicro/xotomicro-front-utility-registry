@@ -8,7 +8,7 @@
         "build": "webpack --config config/webpack.prod.js",
         "serve": "serve build",
         "clean": "rm -rf build",
- "format:prettify": "prettier '**/*' --ignore-path /.gitignore --config ./.prettierrc.js",
+ "format:prettify": "prettier './src/**/*' --ignore-path ./.gitignore --config ./.prettierrc.js --fix",
         "lint:es": "eslint '**/*.{js,jsx,ts,tsx}' -f codeframe --ignore-path ./.eslintignore --fix --cache --cache-location 'node_modules/.cache/eslint/'",
         "lint:style": "stylelint '**/*.scss' --config ./.stylelintrc.js --cache --cache-location 'node_modules/.cache/stylelint/' --fix --custom-syntax postcss-less",
         "test:service": "jest src --passWithNoTests --maxWorkers=50%",

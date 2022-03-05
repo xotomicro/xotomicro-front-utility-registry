@@ -1,31 +1,31 @@
 # # SYSTEM
 
 # [submodule "xotomicro-hooksystem"]
-# path = /xotomicro-frontend/packages/system/hooksystem
-# url = git@github.com:gregcousin126/xotomicro-hooksystem.git
+# 	path = /xotomicro-frontend/packages/system/hooksystem
+# 	url = git@github.com:gregcousin126/xotomicro-hooksystem.git
 
 # [submodule "xotomicro-shellsystem"]
-# path = /xotomicro-frontend/packages/system/shellsystem
-# url = git@github.com:gregcousin126/xotomicro-shellsystem.git
+# 	path = /xotomicro-frontend/packages/system/shellsystem
+# 	url = git@github.com:gregcousin126/xotomicro-shellsystem.git
 
 # # WEB
 
 # [submodule "xotomicro-authweb"]
-# path = /xotomicro-frontend/packages/web/authweb
-# url = git@github.com:gregcousin126/xotomicro-authweb.git
+# 	path = /xotomicro-frontend/packages/web/authweb
+# 	url = git@github.com:gregcousin126/xotomicro-authweb.git
 
 # [submodule "xotomicro-eventweb"]
-# path = /xotomicro-frontend/packages/web/eventweb
-# url = git@github.com:gregcousin126/xotomicro-eventweb.git
+# 	path = /xotomicro-frontend/packages/web/eventweb
+# 	url = git@github.com:gregcousin126/xotomicro-eventweb.git
 
 # [submodule "xotomicro-orderweb"]
-# path = /xotomicro-frontend/packages/web/orderweb
-# url = git@github.com:gregcousin126/xotomicro-orderweb.git
+# 	path = /xotomicro-frontend/packages/web/orderweb
+# 	url = git@github.com:gregcousin126/xotomicro-orderweb.git
 
 # [submodule "xotomicro-productweb"]
-# path = /xotomicro-frontend/packages/web/productweb
-# url = git@github.com:gregcousin126/xotomicro-productweb.git
+# 	path = /xotomicro-frontend/packages/web/productweb
+# 	url = git@github.com:gregcousin126/xotomicro-productweb.git
 
 # [submodule "xotomicro-userweb"]
-# path = /xotomicro-frontend/packages/web/userweb
-# url = git@github.com:gregcousin126/xotomicro-userweb.git
+# 	path = /xotomicro-frontend/packages/web/userweb
+# 	url = git@github.com:gregcousin126/xotomicro-userweb.git

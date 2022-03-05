@@ -39,8 +39,7 @@
     "test:e2e": "lerna run test:e2e --stream --since",
     "test:coverage": "lerna run test:coverage --stream --since",
     "publish": "lerna run publish --stream",
-    "create:repo": "lerna run create:repo --stream",
-    "prepare": "husky install"
+    "create:repo": "lerna run create:repo --stream"
   },
   "lint-staged": {
     "*.(tsx|html|css)": [

@@ -12,6 +12,6 @@
     },
     "scripts": {
         "start": "echo OK",
-        "publish": "lerna run tsc && lerna publish from-git --no-verify-access --no-verify-registry --yes"
+        "publish": "lerna run tsc && lerna publish from-git"
     }
 }

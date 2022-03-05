@@ -1,87 +1,26 @@
-**/node_modules
-**/dist
-lerna-debug.log
+# LOGS
+logs
+*.log
+npm-debug.log*
 
-### CUSTOM ###
-
-.userservice/.idea/
-.userservice/target/
-*.iml
-
-# IGNORE ARTIFACTS:
-
-build
-coverage
-target
-**/.eslintcache
-**/coverage
-
-dist
+# DEPENDENCY DIRECTORIES
 node_modules/
-coverage/
-lerna-debug.log
 
-### MACOS ###
+# OPTIONAL NPM CACHE DIRECTORY
+.npm
+.idea
 
-# GENERAL
-
-.DS_Store
-.AppleDouble
-.LSOverride
-
-# THUMBNAILS
-
-._*
-
-# FILES THAT MIGHT APPEAR IN THE ROOT OF A VOLUME
-
-.DocumentRevisions-V100
-.fseventsd
-.Spotlight-V100
-.TemporaryItems
-.Trashes
-.VolumeIcon.icns
-.com.apple.timemachine.donotpresent
-
-# DIRECTORIES POTENTIALLY CREATED ON REMOTE AFP SHARE
-
-.AppleDB
-.AppleDesktop
-Network Trash Folder
-Temporary Items
-.apdisk
-
-### VISUALSTUDIOCODE ###
-
-.vscode/*
-!.vscode/settings.json
-!.vscode/tasks.json
-!.vscode/launch.json
-!.vscode/extensions.json
-*.code-workspace
-
-### VISUALSTUDIOCODE PATCH ###
-
-# HISTORY
-
-.history
-
-# OS
-
-.DS_Store
-
-# DATABASE
-
-database/*
-!database/.gitkeep
-
-#**/lib
-# .idea
+# OPTIONAL ESLINT CACHE
 .eslintcache
 
-dump.rdb
+# dotenv environment variables file
+# .env
 
-# CAPACITOR
+# EDITOR DIRECTORIES AND FILES
+.idea
+.DS_Store
 
-**/ios
-**/android
+# GENERATED
+/dist/
+/coverage/
+/build/

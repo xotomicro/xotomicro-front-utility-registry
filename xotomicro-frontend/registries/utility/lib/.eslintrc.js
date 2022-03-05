@@ -52,6 +52,7 @@ module.exports = {
         "global-require": "off", // https://eslint.org/docs/rules/global-require
         "import/no-dynamic-require": "off", // https://github.com/benmosher/eslint-plugin-import/blob/master/docs/rules/no-dynamic-require.md
         "no-inner-declarations": "off", // https://eslint.org/docs/rules/no-inner-declarations
+		
         // New rules
         "class-methods-use-this": "off",
         "import/extensions": "off",
@@ -59,6 +60,7 @@ module.exports = {
         "@typescript-eslint/explicit-function-return-type": "off",
         "@typescript-eslint/no-var-requires": "off",
         "@typescript-eslint/explicit-module-boundary-types": "off",
+        "@typescript-eslint/no-unused-vars": "off",
         "@typescript-eslint/no-explicit-any": "off",
         "@typescript-eslint/ban-types": "off",
     },

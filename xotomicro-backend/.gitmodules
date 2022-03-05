@@ -1,0 +1,35 @@
+# # SYSTEM
+
+# [submodule "xotomicro-shellsystem"]
+# path = /xotomicro-backend/packages/system/shellsystem
+# url = git@github.com:gregcousin126/xotomicro-shellsystem.git
+
+# # SERVICE
+
+# [submodule "xotomicro-authservice"]
+# path = /xotomicro-backend/packages/service/authservice
+# url = git@github.com:gregcousin126/xotomicro-authservice.git
+
+# [submodule "xotomicro-eurekaserver"]
+# path = /xotomicro-backend/packages/service/eurekaserver
+# url = git@github.com:gregcousin126/xotomicro-eurekaserver.git
+
+# [submodule "xotomicro-eventservice"]
+# path = /xotomicro-backend/packages/service/eventservice
+# url = git@github.com:gregcousin126/xotomicro-eventservice.git
+
+# [submodule "xotomicro-gatewayservice"]
+# path = /xotomicro-backend/packages/service/gatewayservice
+# url = git@github.com:gregcousin126/xotomicro-gatewayservice.git
+
+# [submodule "xotomicro-orderservice"]
+# path = /xotomicro-backend/packages/service/orderservice
+# url = git@github.com:gregcousin126/xotomicro-orderservice.git
+
+# [submodule "xotomicro-productservice"]
+# path = /xotomicro-backend/packages/service/productservice
+# url = git@github.com:gregcousin126/xotomicro-productservice.git
+
+# [submodule "xotomicro-userservice"]
+# path = /xotomicro-backend/packages/service/userservice
+# url = git@github.com:gregcousin126/xotomicro-userservice.git

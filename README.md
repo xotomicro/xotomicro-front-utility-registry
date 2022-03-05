@@ -4,31 +4,19 @@
 
 Take some time to review the documentation about this project
 
-##### BACKEND
+#### BACKEND
 
-- [BACKEND](https://github.com/xotosphere/xotomicro-backend/blob/master/README.md) : main readme for backend
+- [BACKEND](https://github.com/xotomicro/xotomicro-backend/blob/master/README.md) : main readme for backend
 
-##### FRONTEND
+#### FRONTEND
 
-- [FRONTEND](https://github.com/xotosphere/xotomicro-frontend/blob/master/README.md) : main readme for frontend
+- [FRONTEND](https://github.com/xotomicro/xotomicro-frontend/blob/master/README.md) : main readme for frontend
 
-### 🧪 Testing
+### 🧪 URLS
 
 - Elasticsearch : http://localhost:9200
 - Backend api swagger : http://localhost:8080/swagger-ui.html
 - Front end UI : http://localhost:4200
-
-### 🏗️ ARCHITECTURE
-
-<img src="/documentation/backend/architecture.png" width="800">
-
-###  🎭 AUTHENTICATION
-
-<img src="/documentation/backend/authentication.png" width="800">
-
-### 📦 CREATE PRODUCT
-
-<img src="/documentation/backend/create-product.png" width="800">
 
 ### 👤 AUTHOR
 
@@ -38,5 +26,5 @@ Take some time to review the documentation about this project
 ### 📝 LICENSE
 
 Copyright © 2021 [XOTOSPHERE](https://github.com/xotosphere).<br/>
-This project is [ISC](https://github.com/xotosphere/xotomicro-frontend/blob/main/LICENSE) licensed.
+This project is [ISC](https://github.com/xotomicro/xotomicro-frontend/blob/main/LICENSE) licensed.
 

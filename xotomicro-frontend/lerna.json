@@ -3,7 +3,6 @@
   "useWorkspaces": true,
   "nohoist": ["**"],
   "ignoreChanges": ["**/__tests__/**", "**/*.md"],
-  "version": "0.0.9",
   "npmClient": "yarn",
   "command": {
     "publish": {

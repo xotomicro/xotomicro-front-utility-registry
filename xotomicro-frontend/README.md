@@ -109,7 +109,7 @@ lerna publish from-package # explicitly publish packages where the latest versio
 ### 📝 LICENSE
 
 Copyright © 2021 [XOTOSPHERE](https://github.com/xotosphere).<br/>
-This project is [ISC](https://github.com/xotosphere/xotomicro-frontend/blob/main/LICENSE) licensed.
+This project is [ISC](https://github.com/xotomicro/xotomicro-frontend/blob/main/LICENSE) licensed.
 
 ### 🛳 PORTS
 | ROOTSHELL | WEBEVENT | WEBORDER | WEBPRODUCT | WEBUSER | WEBAUTH | hooksystem |

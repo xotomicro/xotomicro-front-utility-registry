@@ -18,10 +18,10 @@
         "webpack": "5.9.0"
     },
     "scripts": {
-        "boot": "yarn clean && yarn initialize",
+        "boot": "yarn clean && yarn install",
         "clean": "lerna clean --yes && lerna exec -- rm -rf build",
         "build": "lerna run build --stream",
-        "initialize": "yarn install --legacy-peer-deps",
+        "install": "yarn install --legacy-peer-deps",
         "start": "lerna exec yarn start --parallel",
         "start:app": "lerna run start --stream --scope={authweb,eventweb,orderweb,productweb,userweb}",
         "start:root": "lerna run start --stream --scope={shellsystem,hooksystem}",

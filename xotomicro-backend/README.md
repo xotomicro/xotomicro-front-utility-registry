@@ -53,5 +53,5 @@ docker-compose stop && docker system prune <<< y # stop and Prune all services
 ### 📝 LICENSE
 
 Copyright © 2021 [XOTOSPHERE](https://github.com/xotosphere).<br/>
-This project is [ISC](https://github.com/xotosphere/xotomicro-backend/blob/main/LICENSE) licensed.
+This project is [ISC](https://github.com/xotomicro/xotomicro-backend/blob/main/LICENSE) licensed.
 

@@ -14,5 +14,5 @@
         "start": "echo OK",
         "publish": "lerna run tsc && lerna publish patch --yes"
     },
-    "gitHead": "1e38cec5b26791c5de3cd2949ed42012de0e40eb"
+    "gitHead": "3d43972f6de84d3a2f762637302f556cc16d76d1"
 }

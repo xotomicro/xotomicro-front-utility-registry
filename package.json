@@ -44,11 +44,11 @@
   },
   "lint-staged": {
     "*.(tsx|html|css)": [
-      "lerna run format:prettify",
-      "lerna run lint:es"
+      "yarn run format:prettify",
+      "yarn run lint:es"
     ],
     "*.scss": [
-      "lerna run lint:style"
+      "yarn run lint:style"
     ]
   },
   "dependencies": {

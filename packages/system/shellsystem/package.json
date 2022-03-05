@@ -1,7 +1,7 @@
 {
     "name": "@xotomicro/shellsystem",
     "private": true,
-    "version": "0.0.99",
+    "version": "0.0.100",
     "scripts": {
         "start": "webpack-cli serve --config config/webpack.dev.js",
         "build": "webpack --config config/webpack.prod.js",
@@ -15,7 +15,7 @@
         "create:repo": "sh ./node_modules/@xotomicro/utility/lib/scripts/git-util.sh serviceRepoCreate"
     },
     "dependencies": {
-        "@xotomicro/utility": "^0.0.99",
+        "@xotomicro/utility": "^0.0.100",
         "css-loader": "^6.2.0",
         "sass": "^1.45.1",
         "sass-loader": "^12.1.0",

@@ -10,6 +10,5 @@
         "declarationDir": "dist/__types__",
         "sourceRoot": "src",
         "outDir": "dist"
-    },
-    "include": ["src/**/*"]
+    }
 }

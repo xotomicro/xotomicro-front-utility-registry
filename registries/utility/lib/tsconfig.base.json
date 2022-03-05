@@ -6,8 +6,7 @@
 		"noImplicitAny": false,
 		"strictPropertyInitialization": false,
 		"moduleResolution": "node",
-		"baseUrl": "./",
-		"rootDir": "src",
+		"baseUrl": ".",
 		"types": ["jest", "node"],
 		"allowSyntheticDefaultImports": true,
 		"esModuleInterop": true,
@@ -15,13 +14,13 @@
 		"forceConsistentCasingInFileNames": true,
 		"resolveJsonModule": true,
 		"paths": {
-			"@app/*": ["src/app/*"],
-			"@model/*": ["src/model/*"],
-			"@services/*": ["src/services/*"],
-			"@store/*": ["src/store/*"],
-			"@style/*": ["src/style/*"],
-			"@events/*": ["src/events/*"],
-			"@utils/*": ["src/utils/*"],
+			"@app/*": ["/src/app/*"],
+			"@model/*": ["/src/model/*"],
+			"@services/*": ["/src/services/*"],
+			"@store/*": ["/src/store/*"],
+			"@style/*": ["/src/style/*"],
+			"@events/*": ["/src/events/*"],
+			"@utils/*": ["/src/utils/*"],
 		}
 	}
 }

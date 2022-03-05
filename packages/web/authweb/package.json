@@ -1,14 +1,13 @@
 {
   "name": "@xotomicro/authweb",
   "private": true,
-  "version": "0.0.103",
+  "version": "0.0.104",
   "license": "ISC",
   "description": "userweb of the xotomicro repo pack - 📦",
   "scripts": {
     "start": "webpack-cli serve --config config/webpack.dev.js",
     "build": "webpack --config config/webpack.prod.js",
     "serve": "serve build",
-    
     "clean": "rm -rf build",
     "format:prettify": "prettier './src/**/*' --ignore-path ./.gitignore --config ./.prettierrc.js --write",
     "lint:es": "eslint '**/*.{js,jsx,ts,tsx}' -f codeframe --ignore-path ./.eslintignore --fix --cache --cache-location 'node_modules/.cache/eslint/'",
@@ -26,8 +25,8 @@
     ]
   },
   "dependencies": {
-    "@xotomicro/design": "^0.0.103",
-    "@xotomicro/utility": "^0.0.103",
+    "@xotomicro/design": "^0.0.104",
+    "@xotomicro/utility": "^0.0.104",
     "css-loader": "^6.2.0",
     "husky": "^7.0.2",
     "node-sass": "^6.0.1",

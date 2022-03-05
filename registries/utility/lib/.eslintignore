@@ -9,3 +9,4 @@
 
 # IGNORE ADD WEBPACK
 **/webpack.*
+config/**/*.js

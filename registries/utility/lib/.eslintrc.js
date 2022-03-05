@@ -1,6 +1,6 @@
 const off = "off"
 const error = "error"
-// const warn = process.argv.includes("--report-unused-disable-directives") ? error : "warn";
+const warn = process.argv.includes("--report-unused-disable-directives") ? error : "warn"
 
 module.exports = {
     root: true,

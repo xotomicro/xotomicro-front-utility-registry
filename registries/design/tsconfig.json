@@ -7,9 +7,6 @@
         "sourceMap": true,
         "strict": true,
         "jsx": "react",
-		"paths": {
-			// overrides
-		},
         "declaration": true,
         "declarationDir": "dist/__types__",
         "sourceRoot": "src",

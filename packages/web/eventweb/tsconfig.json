@@ -1,15 +1,10 @@
 {
     "extends": "./node_modules/@xotomicro/utility/lib/tsconfig.base.json",
     "compilerOptions": {
-        
         "esModuleInterop": true,
         "sourceMap": true,
         "strict": true,
-        "types": ["jest", "node"],
-        "jsx": "react",
-		"paths": {
-			// overrides
-		}
+        "jsx": "react"
     },
     "include": ["src/**/*"]
 }

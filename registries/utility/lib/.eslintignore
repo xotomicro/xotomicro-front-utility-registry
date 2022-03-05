@@ -8,4 +8,4 @@
 *.md
 
 # IGNORE ADD WEBPACK
-webpack.*
+**/webpack.*

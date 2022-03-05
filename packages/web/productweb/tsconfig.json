@@ -2,7 +2,7 @@
 	"extends": "./node_modules/@xotomicro/utility/lib/tsconfig.base.json",
 	"compilerOptions": {
 		"lib": ["esnext", "dom"],
-		
+
 		"esModuleInterop": true,
 		"sourceMap": true,
 		"strict": true,

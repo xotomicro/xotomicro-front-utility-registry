@@ -1,4 +1,6 @@
-const HtmlWebpackPlugin = require("html-webpack-plugin");
+const HtmlWebpackPlugin = require("html-webpack-plugin")
+const TsconfigPathsPlugin = require("tsconfig-paths-webpack-plugin")
+;
 
 module.exports = {
     resolve: {
@@ -25,6 +27,7 @@ module.exports = {
     },
 
     plugins: [
+        new TsconfigPathsPlugin(),
         new HtmlWebpackPlugin({
             template: "./public/index.html",
         }),

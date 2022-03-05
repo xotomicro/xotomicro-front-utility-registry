@@ -2,7 +2,6 @@
     "compileOnSave": true,
 	"extends": "./node_modules/@xotomicro/utility/lib/tsconfig.base.json",
     "compilerOptions": {
-        "baseUrl": ".",
         "esModuleInterop": true,
         "sourceMap": true,
         "strict": true,

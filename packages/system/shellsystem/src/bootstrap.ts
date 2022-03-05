@@ -1,5 +1,5 @@
+/* eslint-disable import/no-unresolved */
 // @ts-nocheck
-/* eslint-disable prettier/prettier */
 
 import {start, registerApplication} from "single-spa"
 import {GlobalEventDistributor} from "./events/globalEvents"

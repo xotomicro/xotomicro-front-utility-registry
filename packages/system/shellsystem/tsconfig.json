@@ -10,7 +10,6 @@
         "skipLibCheck": true,
         "esModuleInterop": true,
         "sourceMap": true,
-        "baseUrl": ".",
         "noEmitOnError": false,
         "lib": ["esnext", "dom", "dom.iterable", "scripthost"]
     },

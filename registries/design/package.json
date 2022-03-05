@@ -4,7 +4,7 @@
     "version": "0.0.99",
     "types": "dist/__types__",
     "main": "dist/index.js",
-    "repository": "https://github.com/xotomicro/xotomicro",
+    "repository": "https://github.com/xotomicro/xotomicro-frontend",
     "files": [
         "dist/**/*"
     ],
@@ -82,5 +82,5 @@
         "webpack-dev-server": "^3.11.0",
         "webpack-merge": "^5.4.0"
     },
-    "gitHead": "3d43972f6de84d3a2f762637302f556cc16d76d1"
+    "gitHead": "4a167d7213f34c1f6cc0d256701833410df50e19"
 }

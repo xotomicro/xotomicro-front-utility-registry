@@ -18,10 +18,11 @@
         "webpack": "5.9.0"
     },
     "scripts": {
-        "boot": "yarn clean && yarn install",
+        "boot": "yarn clean && yarn initialize",
         "clean": "lerna clean --yes && lerna exec -- rm -rf build",
         "build": "lerna run build --stream",
-        "install": "yarn install --legacy-peer-deps",
+        "bootstrap": "lerna bootstrap",
+        "initialize": "lerna exec yarn install",
         "start": "lerna exec yarn start --parallel",
         "start:app": "lerna run start --stream --scope={authweb,eventweb,orderweb,productweb,userweb}",
         "start:root": "lerna run start --stream --scope={shellsystem,hooksystem}",
@@ -57,7 +58,7 @@
         "eslint-plugin-react": "^7.28.0",
         "husky": "^7.0.2",
         "jest": "^26.6.3",
-"postcss-less": "^6.0.0",
+        "postcss-less": "^6.0.0",
         "prettier": "^2.5.1",
         "prettier-eslint": "^13.0.0",
         "stylelint": "^13.13.1",

@@ -1,19 +1,19 @@
-import React, {useEffect, useState} from "react";
-import {EventModel} from "../model/EventModel";
+import React, {useEffect, useState} from "react"
+import {EventModel} from "../model/EventModel"
 
 function EventApi({token}: any) {
-    const [events, setEvents]: any = useState(null);
-    const [loading, setLoading]: any = useState(false);
+    const [events, setEvents]: any = useState(null)
+    const [loading, setLoading]: any = useState(false)
 
     useEffect(() => {
-        setLoading(true);
+        setLoading(true)
         fetch(`http://${process.env.SERVICE_URL}:8080/events`, {headers: {"Content-Type": "application/json", Authorization: token}})
             .then((response: Response) => response.json())
             .then(setEvents)
-            .then(() => setLoading(false));
-    }, [token]);
+            .then(() => setLoading(false))
+    }, [token])
 
-    if (loading) return <p>Loading...</p>;
+    if (loading) return <p>Loading...</p>
 
     if (events) {
         return (
@@ -41,10 +41,10 @@ function EventApi({token}: any) {
                     </tbody>
                 </table>
             </div>
-        );
+        )
     }
 
-    return <p>Cannot load data</p>;
+    return <p>Cannot load data</p>
 }
 
-export default EventApi;
+export default EventApi

@@ -1,13 +1,13 @@
-import {globalEventDistributor} from "../App";
+import {globalEventDistributor} from "../App"
 
 export function setToken(token: string) {
-    sessionStorage.setItem("token", token);
+    sessionStorage.setItem("token", token)
 }
 
 export function getToken() {
-    return sessionStorage.getItem("token");
+    return sessionStorage.getItem("token")
 }
 
 export function getUsername() {
-    return globalEventDistributor.globalStore.username;
+    return globalEventDistributor.globalStore.username
 }

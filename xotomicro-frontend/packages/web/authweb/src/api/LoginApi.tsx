@@ -1,6 +1,6 @@
-import React, {useState} from "react";
-import {globalEventDistributor} from "../App";
-import {LoginModel} from "../model/LoginModel";
+import React, {useState} from "react"
+import {globalEventDistributor} from "../App"
+import {LoginModel} from "../model/LoginModel"
 
 async function Login(credentials: LoginModel) {
     return fetch(`http://${process.env.SERVICE_URL}:8080/auth/login`, {
@@ -9,30 +9,30 @@ async function Login(credentials: LoginModel) {
             "Content-Type": "application/json",
         },
         body: JSON.stringify(credentials),
-    }).then((data: any) => data.json());
+    }).then((data: any) => data.json())
 }
 
 export function LoginApi({setToken}: any) {
-    const [username, setUserName]: any = useState();
-    const [password, setPassword]: any = useState();
-    const [error, setError]: any = useState<any | null>(null);
+    const [username, setUserName]: any = useState()
+    const [password, setPassword]: any = useState()
+    const [error, setError]: any = useState<any | null>(null)
 
     function submitResponce(response: {token: any}) {
-        setToken(response.token);
+        setToken(response.token)
     }
 
     const handleSubmit: any = async (e: any): Promise<void> => {
-        e.preventDefault();
-        setError(null);
-        const response: any = await Login({username, password});
+        e.preventDefault()
+        setError(null)
+        const response: any = await Login({username, password})
         if (response.token) {
-            submitResponce(response);
-            globalEventDistributor.globalStore.username = username;
-            alert("Login successful");
+            submitResponce(response)
+            globalEventDistributor.globalStore.username = username
+            alert("Login successful")
         } else {
-            setError(response.error);
+            setError(response.error)
         }
-    };
+    }
 
     return (
         <div className="login">
@@ -51,5 +51,5 @@ export function LoginApi({setToken}: any) {
                 </div>
             </form>
         </div>
-    );
+    )
 }

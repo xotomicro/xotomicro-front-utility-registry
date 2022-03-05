@@ -1,8 +1,8 @@
-import {NavModel} from "./NavModel";
+import {NavModel} from "./NavModel"
 
 export interface GlobalStoreModel {
-    globalStore: NavModel;
-    handlerList: any;
-    on: any;
-    emit: any;
+    globalStore: NavModel
+    handlerList: any
+    on: any
+    emit: any
 }

@@ -1,6 +1,6 @@
-import React from "react";
-import {navigateToUrl} from "single-spa";
-import {globalEventDistributor} from "../App";
+import React from "react"
+import {navigateToUrl} from "single-spa"
+import {globalEventDistributor} from "../App"
 
 /* FIX COMMENTED CODE TO WORK REACTIVELY */
 
@@ -80,4 +80,4 @@ export const NavBar: any = (): JSX.Element => (
             )} */}
         </ul>
     </nav>
-);
+)

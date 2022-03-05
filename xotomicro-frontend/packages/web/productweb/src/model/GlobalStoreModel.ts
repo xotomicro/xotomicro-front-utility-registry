@@ -1,8 +1,8 @@
-import {ProductModel} from "./ProductModel";
+import {ProductModel} from "./ProductModel"
 
 export interface GlobalStoreModel {
-    globalStore: ProductModel;
-    handlerList: any;
-    on: any;
-    emit: any;
+    globalStore: ProductModel
+    handlerList: any
+    on: any
+    emit: any
 }

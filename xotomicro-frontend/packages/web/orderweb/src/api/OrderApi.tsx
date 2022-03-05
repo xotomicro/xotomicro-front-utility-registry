@@ -1,19 +1,19 @@
-import React, {useEffect, useState} from "react";
-import {OrderModel} from "../model/OrderModel";
+import React, {useEffect, useState} from "react"
+import {OrderModel} from "../model/OrderModel"
 
 function OrderApi({token}: any) {
-    const [orders, setOrders]: any = useState(null);
-    const [loading, setLoading]: any = useState(false);
+    const [orders, setOrders]: any = useState(null)
+    const [loading, setLoading]: any = useState(false)
 
     useEffect(() => {
-        setLoading(true);
+        setLoading(true)
         fetch(`http://${process.env.SERVICE_URL}:8080/orders`, {headers: {"Content-Type": "application/json", Authorization: token}})
             .then((response: Response) => response.json())
             .then(setOrders)
-            .then(() => setLoading(false));
-    }, [token]);
+            .then(() => setLoading(false))
+    }, [token])
 
-    if (loading) return <p>Loading...</p>;
+    if (loading) return <p>Loading...</p>
 
     if (orders) {
         return (
@@ -39,10 +39,10 @@ function OrderApi({token}: any) {
                     </tbody>
                 </table>
             </div>
-        );
+        )
     }
 
-    return <p>Cannot load data</p>;
+    return <p>Cannot load data</p>
 }
 
-export default OrderApi;
+export default OrderApi

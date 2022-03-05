@@ -1,19 +1,19 @@
-import React, {useEffect, useState} from "react";
-import {ProductModel} from "../model/ProductModel";
+import React, {useEffect, useState} from "react"
+import {ProductModel} from "../model/ProductModel"
 
 function ProductApi({token, update}: any) {
-    const [products, setProducts]: any = useState(null);
-    const [loading, setLoading]: any = useState(false);
+    const [products, setProducts]: any = useState(null)
+    const [loading, setLoading]: any = useState(false)
 
     useEffect(() => {
-        setLoading(true);
+        setLoading(true)
         fetch(`http://${process.env.SERVICE_URL}:8080/products`, {headers: {"Content-Type": "application/json", Authorization: token}})
             .then((response: Response) => response.json())
             .then(setProducts)
-            .then(() => setLoading(false));
-    }, [token, update]);
+            .then(() => setLoading(false))
+    }, [token, update])
 
-    if (loading) return <p>Loading...</p>;
+    if (loading) return <p>Loading...</p>
 
     if (products) {
         return (
@@ -37,10 +37,10 @@ function ProductApi({token, update}: any) {
                     </tbody>
                 </table>
             </div>
-        );
+        )
     }
 
-    return <p>Cannot load data</p>;
+    return <p>Cannot load data</p>
 }
 
-export default ProductApi;
+export default ProductApi

@@ -1,8 +1,8 @@
-import {OrderModel} from "./OrderModel";
+import {OrderModel} from "./OrderModel"
 
 export interface GlobalStoreModel {
-    globalStore: OrderModel;
-    handlerList: any;
-    on: any;
-    emit: any;
+    globalStore: OrderModel
+    handlerList: any
+    on: any
+    emit: any
 }

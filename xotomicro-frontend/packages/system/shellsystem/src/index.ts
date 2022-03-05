@@ -4,4 +4,4 @@
  *
  * This gives webpack an opportunity to fetch dependencies before executing the bootstrap code.
  */
-import("./bootstrap");
+import("./bootstrap")

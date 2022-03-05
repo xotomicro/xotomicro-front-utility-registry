@@ -1,12 +1,12 @@
-import React, {useState} from "react";
-import AddProductApi from "../../api/AddProductApi";
-import ProductApi from "../../api/ProductApi";
-import {getToken} from "../../services/ProductServices";
+import React, {useState} from "react"
+import AddProductApi from "../../api/AddProductApi"
+import ProductApi from "../../api/ProductApi"
+import {getToken} from "../../services/ProductServices"
 
-const token: string | null = getToken();
+const token: string | null = getToken()
 
 export const ProductWeb: any = (props: any): JSX.Element => {
-    const [update, setUpdate]: any = useState();
+    const [update, setUpdate]: any = useState()
     return (
         <div className="section-app__item">
             <p>Add product</p>
@@ -15,5 +15,5 @@ export const ProductWeb: any = (props: any): JSX.Element => {
             <p>Product list</p>
             <ProductApi token={token} update={update} />
         </div>
-    );
-};
+    )
+}

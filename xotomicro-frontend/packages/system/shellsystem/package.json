@@ -11,7 +11,9 @@
         "lint:es": "eslint '**/*.{js,jsx,ts,tsx}' -f codeframe --ignore-path ./.eslintignore --fix --cache --cache-location 'node_modules/.cache/eslint/'",
         "lint:style": "stylelint '**/*.scss' --config ./.stylelintrc.js --cache --cache-location 'node_modules/.cache/stylelint/' --fix --custom-syntax postcss-less",
         "test:service": "jest src --passWithNoTests --maxWorkers=50%",
-        "test:coverage": "jest src --passWithNoTests --maxWorkers=50% --coverage"
+        "test:coverage": "jest src --passWithNoTests --maxWorkers=50% --coverage",
+		        "create:repo": "sh git-utils.sh serviceRepoCreate"
+
     },
     "dependencies": {
         "@xotomicro/utility": "^0.0.95",

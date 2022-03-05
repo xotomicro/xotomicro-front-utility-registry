@@ -1,11 +1,11 @@
-import {generateRandomToken} from "./action";
-import {initialState} from "./state";
+import {generateRandomToken} from "./action"
+import {initialState} from "./state"
 
 export function tokenReducer(state: any = initialState, action: any) {
     switch (action.type) {
         case "generateRandomToken":
-            return generateRandomToken(state);
+            return generateRandomToken(state)
         default:
-            return state;
+            return state
     }
 }

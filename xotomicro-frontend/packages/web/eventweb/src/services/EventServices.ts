@@ -1,3 +1,3 @@
 export function getToken(): string | null {
-    return sessionStorage.getItem("token");
+    return sessionStorage.getItem("token")
 }

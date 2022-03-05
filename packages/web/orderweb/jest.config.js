@@ -6,4 +6,5 @@ module.exports = {
     },
     coverageReporters: ["lcov", "text"],
     coverageDirectory: "build/coverage",
+    testMatch: ["**/src/tests/**/*.test.tsx"],
 }

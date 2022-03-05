@@ -1,6 +1,7 @@
 const off = "off"
 const error = "error"
 const warn = process.argv.includes("--report-unused-disable-directives") ? error : "warn"
+const path = require("path")
 
 module.exports = {
     root: true,
@@ -31,11 +32,12 @@ module.exports = {
         react: {
             version: "detect", // Tells eslint-plugin-react to automatically detect the version of React to use
         },
-        // "import/resolver": {
-        //     node: {
-        //         extensions: [".js", ".jsx", ".ts", ".tsx"],
-        //     },
-        // },
+        "import/resolver": {
+            node: {
+                extensions: [".js", ".jsx", ".ts", ".tsx"],
+                paths: [path.resolve(__dirname, "src")],
+            },
+        },
     },
     rules: {
         "prettier/prettier": [
@@ -50,7 +52,7 @@ module.exports = {
         "import/no-unresolved": error,
         "function-paren-newline": off, // https://eslint.org/docs/rules/function-paren-newline
         "global-require": off, // https://eslint.org/docs/rules/global-require
-        // "import/no-dynamic-require": off, // https://github.com/benmosher/eslint-plugin-import/blob/master/docs/rules/no-dynamic-require.md
+        "import/no-dynamic-require": off, // https://github.com/benmosher/eslint-plugin-import/blob/master/docs/rules/no-dynamic-require.md
         "no-inner-declarations": off, // https://eslint.org/docs/rules/no-inner-declarations
 
         // New rules

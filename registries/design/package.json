@@ -18,6 +18,7 @@
     "start": "webpack --watch --config config/webpack.prod.js",
     "build": "webpack --config config/webpack.prod.js",
     "serve": "webpack-cli serve --config config/webpack.dev.js",
+    "prepare": "husky install",
     "clean": "rm -rf build",
     "format:prettify": "prettier './src/**/*' --ignore-path ./.gitignore --config ./.prettierrc.js --fix",
     "lint:es": "eslint '**/*.{js,jsx,ts,tsx}' -f codeframe --ignore-path ./.eslintignore --fix --cache --cache-location 'node_modules/.cache/eslint/'",
@@ -96,5 +97,5 @@
     "webpack-dev-server": "^3.11.0",
     "webpack-merge": "^5.4.0"
   },
-  "gitHead": "6a580660f3ee941a8403859221bf5110f797d9ff"
+  "gitHead": "2d027c7e915c43758258af4c5e95bcc128e5eba6"
 }

@@ -39,7 +39,8 @@
     "test:e2e": "lerna run test:e2e --stream --since",
     "test:coverage": "lerna run test:coverage --stream --since",
     "publish": "lerna run publish --stream",
-    "create:repo": "lerna run create:repo --stream"
+    "create:repo": "lerna run create:repo --stream",
+    "prepare": "husky install"
   },
   "lint-staged": {
     "*.(tsx|html|css)": [
@@ -52,7 +53,6 @@
   },
   "dependencies": {
     "lerna": "^4.0.0"
-
   },
   "devDependencies": {
     "@types/jest": "^26.0.15",
@@ -67,10 +67,8 @@
     "eslint-plugin-json": "^3.1.0",
     "eslint-plugin-prettier": "^3.4.1",
     "eslint-plugin-react": "^7.28.0",
-
-
-"tsconfig-paths-webpack-plugin": "^3.5.2",
-"eslint-import-resolver-typescript": "^2.5.0",
+    "tsconfig-paths-webpack-plugin": "^3.5.2",
+    "eslint-import-resolver-typescript": "^2.5.0",
     "jest": "^26.6.3",
     "lint-staged": "^12.3.5",
     "postcss-less": "^6.0.0",
@@ -81,6 +79,7 @@
     "stylelint-order": "^4.1.0",
     "stylelint-scss": "^3.20.1",
     "ts-jest": "^26.4.4",
-    "typescript": "^4.3.5"
+    "typescript": "^4.3.5",
+    "husky": "^7.0.0"
   }
 }

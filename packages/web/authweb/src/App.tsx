@@ -1,7 +1,7 @@
 import React from "react"
 import ReactDOM from "react-dom"
 import singleSpaReact from "single-spa-react"
-import {AuthWeb} from "./components/auth/AuthWeb"
+import {AuthWeb} from "@components/auth/AuthWeb"
 import {GlobalStoreModel} from "./model/GlobalStoreModel"
 
 import "./style/index.scss"

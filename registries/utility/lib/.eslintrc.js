@@ -49,7 +49,7 @@ module.exports = {
         ],
         // Existing rules
         "comma-dangle": off, // https://eslint.org/docs/rules/comma-dangle
-        "import/no-unresolved": error,
+        "import/no-unresolved": off,
         "function-paren-newline": off, // https://eslint.org/docs/rules/function-paren-newline
         "global-require": off, // https://eslint.org/docs/rules/global-require
         "import/no-dynamic-require": off, // https://github.com/benmosher/eslint-plugin-import/blob/master/docs/rules/no-dynamic-require.md

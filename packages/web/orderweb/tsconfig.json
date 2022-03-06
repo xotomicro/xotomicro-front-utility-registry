@@ -4,6 +4,7 @@
         "esModuleInterop": true,
         "sourceMap": true,
         "strict": true,
-        "jsx": "react"
+        "jsx": "react",
+        "baseUrl": "."
     }
 }

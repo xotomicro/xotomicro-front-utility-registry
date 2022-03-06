@@ -9,6 +9,7 @@
         "declaration": true,
         "declarationDir": "dist/__types__",
         "sourceRoot": "src",
-        "outDir": "dist"
+        "outDir": "dist",
+        "baseUrl": "."
     }
 }

@@ -4,14 +4,14 @@ var path = require("path")
 module.exports = {
     resolve: {
         alias: {
-            "@app": path.resolve(__dirname, "src/app"),
-            "@model": path.resolve(__dirname, "src/model"),
-            "@services": path.resolve(__dirname, "src/services"),
-            "@store": path.resolve(__dirname, "src/store"),
-            "@style": path.resolve(__dirname, "src/style"),
-            "@events": path.resolve(__dirname, "src/events"),
-            "@utils": path.resolve(__dirname, "src/utils"),
-            "@components": path.resolve(__dirname, "src/components"),
+            "@app": path.resolve(process.cwd(), "src/app"),
+            "@model": path.resolve(process.cwd(), "src/model"),
+            "@services": path.resolve(process.cwd(), "src/services"),
+            "@store": path.resolve(process.cwd(), "src/store"),
+            "@style": path.resolve(process.cwd(), "src/style"),
+            "@events": path.resolve(process.cwd(), "src/events"),
+            "@utils": path.resolve(process.cwd(), "src/utils"),
+            "@components": path.resolve(process.cwd(), "src/components"),
         },
         extensions: [".js", ".tsx", ".jsx", ".ts"],
     },

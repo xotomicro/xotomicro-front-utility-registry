@@ -28,6 +28,7 @@
     "@xotomicro/utility": "^0.0.107",
     "css-loader": "^6.2.0",
     "husky": "^7.0.2",
+    "identity-obj-proxy": "^3.0.0",
     "node-sass": "^6.0.1",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",

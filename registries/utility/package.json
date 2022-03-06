@@ -20,7 +20,8 @@
     "publish": "lerna run tsc && lerna publish patch --yes"
   },
   "dependencies": {
-    "husky": "^7.0.2"
+    "husky": "^7.0.2",
+    "identity-obj-proxy": "^3.0.0"
   },
   "devDependencies": {
     "lint-staged": "^12.3.5"

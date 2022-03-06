@@ -28,6 +28,7 @@
   "dependencies": {
     "@xotomicro/utility": "^0.0.107",
     "css-loader": "^6.2.0",
+    "identity-obj-proxy": "^3.0.0",
     "sass": "^1.45.1",
     "sass-loader": "^12.1.0",
     "single-spa": "^5.8.2",

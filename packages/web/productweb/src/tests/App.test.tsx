@@ -1,11 +1,23 @@
 import React from "react"
-import {render, screen} from "@testing-library/react"
+import ReactDOM from "react-dom"
 import {App} from "../App"
+
+let container
+
+beforeEach(() => {
+    container = document.createElement("div")
+    document.body.appendChild(container)
+})
+
+afterEach(() => {
+    document.body.removeChild(container)
+    container = null
+})
 
 global.fetch = jest.fn(async () => {
     return {
         async json() {
-            return {}
+            return []
         },
     } as Response
 })
@@ -16,7 +28,6 @@ const AppTestWrapper: any = (): React.ReactElement => {
 
 describe("App", () => {
     test("should render <App/>", () => {
-        render(<AppTestWrapper />)
-        // expect(screen.getByRole("heading", {name: /react application template/i})).toBeDefined()
+        ReactDOM.render(<AppTestWrapper />, container)
     })
 })

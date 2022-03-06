@@ -15,6 +15,7 @@ module.exports = {
             "@components": path.resolve(__dirname, "src/components"),
         },
         extensions: [".js", ".tsx", ".jsx", ".ts"],
+        plugins: [new TsconfigPathsPlugin()],
     },
 
     module: {
@@ -36,7 +37,6 @@ module.exports = {
     },
 
     plugins: [
-        new TsconfigPathsPlugin(),
         new HtmlWebpackPlugin({
             template: "./public/index.html",
         }),

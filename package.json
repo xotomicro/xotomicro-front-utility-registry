@@ -36,6 +36,7 @@
     "lint:es": "lerna run lint:es --stream",
     "lint:style": "lerna run lint:style --stream",
     "test:all": "lerna run test --stream --since",
+    "test:service":"yarn workspace @xotomicro/productweb run test:service",
     "test:coverage": "lerna run test:coverage --stream --since",
     "publish": "lerna run publish --stream",
     "create:repo": "lerna run create:repo --scope={@xotomicro/shellsystem,@xotomicro/hooksystem}"

@@ -38,7 +38,7 @@
     "test:all": "lerna run test --stream --since",
     "test:coverage": "lerna run test:coverage --stream --since",
     "publish": "lerna run publish --stream",
-    "create:repo": "lerna run create:repo --scope={shellsystem,hooksystem}"
+    "create:repo": "lerna run create:repo --scope={@xotomicro/shellsystem,@xotomicro/hooksystem}"
   },
   "lint-staged": {
     "*.(tsx|html|css)": [

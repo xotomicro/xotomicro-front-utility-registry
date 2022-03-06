@@ -53,7 +53,6 @@ yarn format:prettify # fixes format issues across all micro-front ends and keeps
 ```sh
 # tests
 yarn test:all # test for all unit tests
-yarn test:e2e # test for end to end cypress
 yarn test:coverage # test for code coverage
 ```
 

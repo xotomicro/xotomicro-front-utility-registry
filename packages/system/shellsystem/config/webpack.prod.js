@@ -12,10 +12,8 @@ __webpack_base_uri__ = `http://${process.env.SERVICE_URL}:${process.env.SERVICE_
 const prodConfig = {
     mode: "production",
     entry: path.resolve(process.cwd(), "src/index.ts"),
-
-    output: getMicrofrontendOutputConfig(),
-
     plugins: [new CleanWebpackPlugin()],
+    output: getMicrofrontendOutputConfig(),
 }
 
 module.exports = merge(commonConfig, prodConfig)

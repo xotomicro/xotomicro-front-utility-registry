@@ -1,19 +1,10 @@
 const HtmlWebpackPlugin = require("html-webpack-plugin")
 const TsconfigPathsPlugin = require("tsconfig-paths-webpack-plugin")
-var path = require("path")
+const {getAliasConfig} = require("@xotomicro/utility/lib/config/webpack.shared")
 
 module.exports = {
     resolve: {
-        alias: {
-            "@app": path.resolve(__dirname, "src/app"),
-            "@model": path.resolve(__dirname, "src/model"),
-            "@services": path.resolve(__dirname, "src/services"),
-            "@store": path.resolve(__dirname, "src/store"),
-            "@style": path.resolve(__dirname, "src/style"),
-            "@events": path.resolve(__dirname, "src/events"),
-            "@utils": path.resolve(__dirname, "src/utils"),
-            "@components": path.resolve(__dirname, "src/components"),
-        },
+        alias: getAliasConfig(),
         extensions: [".js", ".tsx", ".jsx", ".ts"],
         plugins: [new TsconfigPathsPlugin()],
     },

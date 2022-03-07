@@ -1,7 +1,7 @@
 {
   "name": "@xotomicro/hooksystem",
   "private": true,
-  "version": "0.0.108",
+  "version": "0.0.109",
   "description": "hooksystem of the xotomicro repo pack - 📦",
   "license": "ISC",
   "scripts": {
@@ -25,7 +25,7 @@
     ]
   },
   "dependencies": {
-    "@xotomicro/utility": "^0.0.108",
+    "@xotomicro/utility": "^0.0.109",
     "css-loader": "^6.2.0",
     "husky": "^7.0.2",
     "identity-obj-proxy": "^3.0.0",

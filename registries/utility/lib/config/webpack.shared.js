@@ -1,8 +1,5 @@
 // @ts-check
-const HtmlWebpackPlugin = require("html-webpack-plugin")
 const path = require("path")
-const {EnvironmentPlugin} = require("webpack")
-const ModuleFederationPlugin = require("webpack/lib/container/ModuleFederationPlugin")
 
 /**
  * Alias Config

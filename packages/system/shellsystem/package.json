@@ -25,14 +25,17 @@
     ]
   },
   "dependencies": {
+    "@types/node": "^17.0.21",
     "@xotomicro/utility": "^0.0.109",
     "css-loader": "^6.2.0",
+    "html-webpack-plugin": "^5.5.0",
     "identity-obj-proxy": "^3.0.0",
     "sass": "^1.45.1",
     "sass-loader": "^12.1.0",
     "single-spa": "^5.8.2",
     "style-loader": "^3.2.1",
-    "systemjs": "^6.10.3"
+    "systemjs": "^6.10.3",
+    "webpack": "^5.70.0"
   },
   "devDependencies": {
     "@babel/core": "^7.12.3",

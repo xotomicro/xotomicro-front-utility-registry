@@ -20,6 +20,7 @@
     "publish": "lerna run tsc && lerna publish patch --yes"
   },
   "dependencies": {
+    "@types/node": "^17.0.21",
     "husky": "^7.0.2",
     "identity-obj-proxy": "^3.0.0"
   },

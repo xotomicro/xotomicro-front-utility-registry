@@ -74,7 +74,7 @@
     "postcss-less": "^6.0.0",
     "prettier": "^2.5.1",
     "prettier-eslint": "^13.0.0",
-    "semver": "^7.3.4",
+    
     "serve": "^11.3.2",
     "stylelint": "^13.13.1",
     "stylelint-config-standard": "^22.0.0",

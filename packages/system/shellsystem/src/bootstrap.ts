@@ -14,7 +14,7 @@ import("./style/overwrite.scss")
 
 registerApplication(
     "hooksystem",
-    () => import("hooksystem/App"),
+    () => import("hooksystem/ApplicationPage"),
     () => true,
     {globalEventDistributor}
 )

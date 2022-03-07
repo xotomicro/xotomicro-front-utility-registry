@@ -1,38 +1,16 @@
+const packageDependencies = require("../package.json").dependencies
+const {getAliasConfig, getModuleRulesConfig, getMicrofrontendPluginsConfig} = require("@xotomicro/utility/lib/config/webpack.shared")
 const HtmlWebpackPlugin = require("html-webpack-plugin")
-var path = require("path")
+const {EnvironmentPlugin} = require("webpack")
+const ModuleFederationPlugin = require("webpack/lib/container/ModuleFederationPlugin")
 
 module.exports = {
     resolve: {
-        alias: {
-            "@app": path.resolve(process.cwd(), "src/app"),
-            "@model": path.resolve(process.cwd(), "src/model"),
-            "@services": path.resolve(process.cwd(), "src/services"),
-            "@store": path.resolve(process.cwd(), "src/store"),
-            "@style": path.resolve(process.cwd(), "src/style"),
-            "@events": path.resolve(process.cwd(), "src/events"),
-            "@utils": path.resolve(process.cwd(), "src/utils"),
-            "@components": path.resolve(process.cwd(), "src/components"),
-        },
+        alias: getAliasConfig(),
         extensions: [".js", ".tsx", ".jsx", ".ts"],
     },
-
     module: {
-        rules: [
-            {
-                test: /\.tsx?$/,
-                loader: "babel-loader",
-                exclude: /node_modules/,
-            },
-            {
-                test: /\.s[ac]ss$/i,
-                use: ["style-loader", "css-loader", "sass-loader"],
-            },
-        ],
+        rules: getModuleRulesConfig(),
     },
-
-    plugins: [
-        new HtmlWebpackPlugin({
-            template: "./public/index.html",
-        }),
-    ],
+    plugins: getMicrofrontendPluginsConfig({packageName: "productweb", packageDependencies, HtmlWebpackPlugin, EnvironmentPlugin, ModuleFederationPlugin}),
 }

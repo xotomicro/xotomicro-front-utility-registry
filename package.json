@@ -21,7 +21,7 @@
     "clean": "lerna clean --yes && lerna exec -- rm -rf build",
     "build": "lerna run build --stream",
     "bootstrap": "lerna bootstrap",
-    "initialize": "lerna exec yarn install",
+    "initialize": "yarn install",
     "start": "lerna exec yarn start --parallel",
     "start:app": "lerna run start --stream --scope={authweb,eventweb,orderweb,productweb,userweb}",
     "start:root": "lerna run start --stream --scope={shellsystem,hooksystem}",

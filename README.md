@@ -53,7 +53,6 @@ yarn format:prettify # fixes format issues across all micro-front ends and keeps
 ```sh
 # tests
 yarn test:all # test for all unit tests
-yarn test:coverage # test for code coverage
 ```
 
 ### REGISTRIES - MONOREPO

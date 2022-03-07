@@ -1,16 +1,20 @@
-name: utility-ci
+name: Automated Tests and Linting
 
-on:
-  push:
-    branches: [development]
-  pull_request:
-    branches: [development]
+on: [push]
 
 jobs:
-  test-service:
+  test:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - run: yarn test:service
 
+      - uses: actions/cache@v2
+        with:
+          path: '**/node_modules'
+          key: ${{ runner.os }}-modules-${{ hashFiles('**/yarn.lock') }}
 
+      - name: Install packages
+        run: yarn install
+
+      - name: Run Tests
+        run: yarn test:service

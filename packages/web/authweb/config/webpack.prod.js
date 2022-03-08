@@ -1,8 +1,8 @@
 const {merge} = require("webpack-merge")
 const path = require("path")
-const commonConfig = require("./webpack.common")
 require("dotenv").config({path: "node_modules/@xotomicro/utility/lib/global.env"})
 require("dotenv").config()
+const commonConfig = require("./webpack.common")
 const {getMicrofrontendOutputConfig} = require("@xotomicro/utility/lib/config/webpack.shared")
 
 // eslint-disable-next-line no-undef

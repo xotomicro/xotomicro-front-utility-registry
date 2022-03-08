@@ -1,4 +1,5 @@
 import React, {useEffect, useState} from "react"
+import { isArray } from 'util'
 import {EventModel} from "../model/EventModel"
 
 function EventApi({token}: any) {
@@ -15,7 +16,7 @@ function EventApi({token}: any) {
 
     if (loading) return <p>Loading...</p>
 
-    if (events) {
+    if (events && Array.isArray(events)) {
         return (
             <div className="user">
                 <table>

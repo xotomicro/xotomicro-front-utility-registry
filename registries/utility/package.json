@@ -4,7 +4,7 @@
   "version": "0.0.110",
   "description": "utils of the xotomicro repo pack - 📦",
   "license": "ISC",
-  "repository": "https://github.com/xotomicro/xotomicro-frontend",
+  "repository": "https://github.com/xotomicro/utility",
   "files": [
     "lib/**/*"
   ],
@@ -17,7 +17,8 @@
   },
   "scripts": {
     "start": "echo OK",
-    "publish": "lerna run tsc && lerna publish patch --yes"
+    "publish": "lerna run tsc && lerna publish patch --yes",
+	"create:repo": "sh ./git-util.sh serviceRepoCreate"
   },
   "dependencies": {
     "@types/node": "^17.0.21",

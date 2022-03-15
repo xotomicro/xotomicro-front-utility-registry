@@ -35,7 +35,7 @@
     "test:all": "lerna run test --stream --since",
     "test:service":"yarn workspace @xotomicro/productweb run test:service",
     "publish": "lerna run publish --stream",
-    "create:repo": "lerna run create:repo --scope={@xotomicro/shellsystem,@xotomicro/hooksystem}"
+    "create:repo": "lerna run create:repo --scope={@xotomicro/design,@xotomicro/utility}"
   },
   "lint-staged": {
     "*.(tsx|html|css)": [

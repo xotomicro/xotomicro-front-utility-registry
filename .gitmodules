@@ -1,4 +1,4 @@
-# # SYSTEM
+# # SYSTEM SUBMODULES
 
 # [submodule "xotomicro-hooksystem"]
 # 	path = /xotomicro-frontend/packages/system/hooksystem
@@ -8,7 +8,7 @@
 # 	path = /xotomicro-frontend/packages/system/shellsystem
 # 	url = git@github.com:xotomicro/xotomicro-shellsystem.git
 
-# # WEB
+# # WEB SUBMODULES
 
 # [submodule "xotomicro-authweb"]
 # 	path = /xotomicro-frontend/packages/web/authweb
@@ -29,3 +29,13 @@
 # [submodule "xotomicro-userweb"]
 # 	path = /xotomicro-frontend/packages/web/userweb
 # 	url = git@github.com:xotomicro/xotomicro-userweb.git
+
+# # REGISTRIES
+
+# [submodule "design"]
+# 	path = /xotomicro-frontend/registries/design
+# 	url = git@github.com:xotomicro/design.git
+
+# [submodule "utility"]
+# 	path = /xotomicro-frontend/registries/utility
+# 	url = git@github.com:xotomicro/utility.git

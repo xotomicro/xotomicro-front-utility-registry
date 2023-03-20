@@ -1,0 +1,33 @@
+{
+	"name": "@xotomicro/xotomicro-front-utility-registry",
+	"private": false,
+	"version": "0.0.2",
+	"description": "utils of the xotomicro repo pack - 📦",
+	"license": "ISC",
+	"repository": "https://github.com/xotomicro/xotomicro-front-utility-registry",
+	"files": [
+		"src/**/*"
+	],
+	"publishConfig": {
+		"registry": "https://npm.pkg.github.com",
+		"access": "public"
+	},
+	"scripts": {
+		"start": "echo utility start command",
+		"clean": "rm -rf build",
+		"clear": "rm -rf node_modules",
+		"registries:update": "npx ncu @xotomicro/* -u",
+		"registries:publish": "npx np --branch development --no-tests patch",
+		"git:changelog": "auto-changelog -p",
+		"git:update": "yarn git:changelog && sh ./git-util.sh gitUpdate",
+		"git:checkout": "git checkout development",
+		"git:init": "sh ./git-util.sh gitInit"
+	},
+	"dependencies": {
+		"identity-obj-proxy": "^3.0.0"
+	},
+	"devDependencies": {
+		"@types/node": "^17.0.21",
+		"auto-changelog": "^2.4.0"
+	}
+}

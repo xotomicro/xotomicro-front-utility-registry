@@ -1,0 +1,12 @@
+# IGNORE ALL HTML FILES:
+*.html
+
+# IGNORE TS BUILD INFO
+*.tsbuildinfo
+
+# IGNORE MARKDOWN FILES
+*.md
+
+# IGNORE ADD WEBPACK
+**/webpack.*
+config/**/*.js

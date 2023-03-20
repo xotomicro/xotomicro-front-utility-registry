@@ -1,0 +1,21 @@
+module.exports = {
+    preset: "ts-jest/presets/js-with-ts",
+    setupFilesAfterEnv: ["@testing-library/jest-dom/extend-expect"],
+    moduleNameMapper: {
+		"@app(.*)$": "<rootDir>/src/$1",
+		"@model(.*)$": "<rootDir>/src/model/$1",
+		"@class(.*)$": "<rootDir>/src/class/$1",
+		"@design(.*)$": "<rootDir>/src/components/$1",
+		"@api(.*)$": "<rootDir>/src/api/$1",
+		"@services(.*)$": "<rootDir>/src/services/$1",
+		"@store(.*)$": "<rootDir>/src/store/$1",
+		"@style(.*)$": "<rootDir>/src/style/$1",
+		"@events(.*)$": "<rootDir>/src/events/$1",
+		"@utils(.*)$": "<rootDir>/src/utils/$1",
+		"@components(.*)$": "<rootDir>/src/components/$1",
+        ".+\\.(css|styl|less|sass|scss)$": "identity-obj-proxy",
+    },
+    coverageReporters: ["lcov", "text"],
+    coverageDirectory: "build/coverage",
+    testMatch: ["**/src/tests/**/*.test.tsx"],
+};
